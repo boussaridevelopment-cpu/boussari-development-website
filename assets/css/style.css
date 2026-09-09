@@ -734,7 +734,7 @@ body{ padding-bottom:0; }
     -webkit-backdrop-filter:blur(18px); backdrop-filter:blur(18px);
     display:flex; align-items:center; justify-content:center;
     opacity:0; visibility:hidden; pointer-events:none;
-    transition:opacity .4s, visibility .4s;
+    transition:opacity .18s ease-out, visibility .18s;
     margin-left:0;
   }
   .main-nav.open{ opacity:1; visibility:visible; pointer-events:auto; }
