@@ -720,6 +720,11 @@ body{ padding-bottom:0; }
 /* parallax layer */
 [data-parallax]{ will-change:transform; }
 
+/* responsive column helpers (must come after component bases) */
+.cols-2{ grid-template-columns:1fr 1fr; }
+.cols-3{ grid-template-columns:repeat(3, 1fr); }
+.split-form{ grid-template-columns:.85fr 1.15fr; align-items:start; }
+
 /* ============================================================
    RESPONSIVE
    ============================================================ */
@@ -783,6 +788,17 @@ body{ padding-bottom:0; }
 }
 
 /* ---------- reduced motion ---------- */
+@media (max-width:1080px){
+  .cols-3{ grid-template-columns:1fr 1fr; }
+}
+@media (max-width:900px){
+  .scroll-cue{ bottom:76px; }
+  .split-form{ grid-template-columns:1fr; }
+}
+@media (max-width:640px){
+  .cols-2, .cols-3, .split-form{ grid-template-columns:1fr; }
+}
+
 @media (prefers-reduced-motion:reduce){
   html{ scroll-behavior:auto; }
   *,*::before,*::after{ animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
