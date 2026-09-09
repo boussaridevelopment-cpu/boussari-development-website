@@ -178,6 +178,8 @@ p{ color:var(--muted); }
 /* logo */
 .logo{ display:flex; align-items:center; gap:14px; flex-shrink:0; }
 .logo-mark{ width:44px; height:44px; }
+img.logo-mark{ object-fit:contain; }
+.logo-full{ width:min(230px, 64vw); height:auto; }
 .logo-text{ line-height:1.15; }
 .logo-text .l1{
   font-family:var(--serif); font-size:1.06rem; letter-spacing:.24em; color:var(--ink);
