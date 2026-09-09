@@ -23,6 +23,7 @@
       toggle.classList.toggle("is-open", open);
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
       document.body.style.overflow = open ? "hidden" : "";
+      document.body.classList.toggle("menu-open", open);
     });
     nav.addEventListener("click", function (e) {
       if (e.target.tagName === "A") {
@@ -30,6 +31,7 @@
         toggle.classList.remove("is-open");
         toggle.setAttribute("aria-expanded", "false");
         document.body.style.overflow = "";
+        document.body.classList.remove("menu-open");
       }
     });
     document.addEventListener("keydown", function (e) {

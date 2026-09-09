@@ -791,6 +791,13 @@ body{ padding-bottom:0; }
   .banner-in{ flex-direction:column; align-items:flex-start; }
 }
 
+/* pause background animations while the menu overlay is open (keeps the
+   backdrop-filter blur cheap on mobile; animations resume on close) */
+body.menu-open *, body.menu-open *::before, body.menu-open *::after{
+  animation-play-state: paused !important;
+}
+body.menu-open .hero-glow, body.menu-open .hero-sweep{ display:none; }
+
 /* ---------- reduced motion ---------- */
 @media (max-width:1080px){
   .cols-3{ grid-template-columns:1fr 1fr; }
