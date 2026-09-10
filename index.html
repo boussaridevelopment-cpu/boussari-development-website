@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=9">
+<link rel="stylesheet" href="assets/css/style.css?v=10">
 <noscript><style>.reveal{opacity:1;transform:none}.hero h1 .ln > span{transform:none}.hero-sub,.hero-cta,.hero-note,.scroll-cue{opacity:1}</style></noscript>
 <script type="application/ld+json">
 {
@@ -85,17 +85,91 @@
   <div class="hero-vignette" aria-hidden="true"></div>
 
   <div class="hero-in">
-    <p class="eyebrow no-line">Boussari Development &nbsp;·&nbsp; Building Tomorrow | Connecting North America</p>
-    <h1>
-      <span class="ln"><span>One Company.</span></span>
-      <span class="ln"><span class="gold">Multiple Property Solutions.</span></span>
-    </h1>
-    <p class="hero-sub">Residential renovation, income-producing legal basement conversions, 24/7 commercial property services and real estate &amp; investment strategy — backed by hands-on construction experience, project coordination and active real-estate market insight.</p>
-    <div class="hero-cta btn-row">
-      <a class="btn btn-gold" href="contact.html">Request a Quote</a>
-      <a class="btn btn-ghost" href="#services">Explore Our Services</a>
+    <div class="hero-copy">
+      <p class="eyebrow no-line">Boussari Development &nbsp;·&nbsp; Building Tomorrow | Connecting North America</p>
+      <h1>
+        <span class="ln"><span>One Company.</span></span>
+        <span class="ln"><span class="gold">Multiple Property Solutions.</span></span>
+      </h1>
+      <p class="hero-sub">Residential renovation, income-producing legal basement conversions, 24/7 commercial property services and real estate &amp; investment strategy — backed by hands-on construction experience, project coordination and active real-estate market insight.</p>
+      <div class="hero-cta btn-row">
+        <a class="btn btn-gold" href="contact.html">Request a Quote</a>
+        <a class="btn btn-ghost" href="#services">Explore Our Services</a>
+      </div>
+      <p class="hero-note">Small projects are welcome — and larger projects can be coordinated from planning and financing through construction and completion.</p>
     </div>
-    <p class="hero-note">Small projects are welcome — and larger projects can be coordinated from planning and financing through construction and completion.</p>
+
+    <div class="hero-art" aria-label="Interactive property model">
+      <svg class="iso" viewBox="0 0 600 560" role="img" aria-label="Isometric model of a property showing renovation floors, 24/7 commercial level, legal basement suite and rising value">
+        <defs>
+          <linearGradient id="isoRoom" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#e6c67e" stop-opacity=".85"/><stop offset="1" stop-color="#c9a458" stop-opacity=".45"/>
+          </linearGradient>
+          <radialGradient id="isoShadow"><stop offset="0" stop-color="#000" stop-opacity=".55"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+          <clipPath id="isoClip"><rect x="130" y="55" width="260" height="410"/></clipPath>
+        </defs>
+        <!-- ground plate + grid -->
+        <g stroke="rgba(185,194,207,.14)" fill="none">
+          <path d="M260 505 L450 410 L260 315 L70 410 Z" fill="#0a1220"/>
+          <path d="M165 457 L355 362 M212 481 L402 386 M118 434 L308 339"/>
+          <path d="M165 362 L355 457 M118 386 L308 481 M212 339 L402 434"/>
+        </g>
+        <ellipse cx="260" cy="470" rx="160" ry="34" fill="url(#isoShadow)"/>
+        <g class="float">
+          <!-- basement level (cutaway) -->
+          <a class="iso-floor" data-key="base" href="basement-income.html" aria-label="Basement income suite">
+            <path class="face" d="M150 330 L260 385 L260 455 L150 400 Z" fill="#0b1322" stroke="#22304a"/>
+            <path class="face glow" d="M370 330 L260 385 L260 455 L370 400 Z" fill="url(#isoRoom)" stroke="rgba(201,164,88,.55)"/>
+            <path d="M340 352 L290 377 M340 372 L290 397" stroke="#0b1322" stroke-width="2" opacity=".55"/>
+            <path d="M322 396 l26 -13 v14 l-26 13 z" fill="#0b1322" opacity=".7"/>
+            <path class="face" d="M260 275 L370 330 L260 385 L150 330 Z" fill="#0e1830" stroke="#22304a"/>
+          </a>
+          <!-- commercial level -->
+          <a class="iso-floor" data-key="comm" href="commercial.html" aria-label="Commercial services, 24/7">
+            <path class="face" d="M150 205 L260 260 L260 335 L150 280 Z" fill="#0d1728" stroke="#22304a"/>
+            <path d="M172 232 l30 15 v20 l-30 -15 z M212 252 l30 15 v20 l-30 -15 z" fill="rgba(230,198,126,.5)"/>
+            <path class="face glow" d="M370 205 L260 260 L260 335 L370 280 Z" fill="#13203a" stroke="#22304a"/>
+            <path d="M344 238 l-56 28 v26 l56 -28 z" fill="url(#isoRoom)" opacity=".8"/>
+            <path d="M344 232 l-56 28" stroke="#e6c67e" stroke-width="2.4"/>
+            <path class="face" d="M260 150 L370 205 L260 260 L150 205 Z" fill="#101c33" stroke="#2a3b5c"/>
+          </a>
+          <!-- renovation level -->
+          <a class="iso-floor" data-key="reno" href="renovation.html" aria-label="Home renovation and improvement">
+            <path class="face" d="M150 130 L260 185 L260 260 L150 205 Z" fill="#0d1728" stroke="#22304a"/>
+            <path d="M172 157 l30 15 v20 l-30 -15 z M212 177 l30 15 v20 l-30 -15 z" fill="rgba(230,198,126,.5)"/>
+            <path class="face" d="M370 130 L260 185 L260 260 L370 205 Z" fill="#13203a" stroke="#22304a"/>
+            <path d="M348 157 l-30 15 v20 l30 -15 z M308 177 l-30 15 v20 l30 -15 z" fill="rgba(230,198,126,.5)"/>
+            <path class="face" d="M260 75 L370 130 L260 185 L150 130 Z" fill="#101c33" stroke="#2a3b5c"/>
+            <path d="M260 63 L382 124 L260 185 L138 124 Z" fill="none" stroke="rgba(201,164,88,.5)" stroke-width="1.4"/>
+            <path d="M260 63 V40" stroke="rgba(201,164,88,.6)" stroke-width="1.4"/>
+            <circle class="beacon" cx="260" cy="36" r="4" fill="#e6c67e"/>
+          </a>
+          <!-- gold corner edges -->
+          <g stroke="rgba(201,164,88,.45)" stroke-width="1.4" fill="none">
+            <path d="M150 130 V280 M370 130 V280 M260 185 V335 M150 280 V400 M370 280 V400 M260 335 V455"/>
+          </g>
+          <!-- scan line -->
+          <g clip-path="url(#isoClip)">
+            <rect class="scan" x="130" y="60" width="260" height="2" fill="rgba(230,198,126,.4)"/>
+          </g>
+          <!-- value arrow -->
+          <a class="iso-floor" data-key="invest" href="real-estate.html" aria-label="Real estate and investment value">
+            <path d="M96 330 C86 268 96 226 118 176" fill="none" stroke="#e6c67e" stroke-width="2.6" stroke-linecap="round"/>
+            <path d="M118 176 h-13 M118 176 v13" fill="none" stroke="#e6c67e" stroke-width="2.6" stroke-linecap="round"/>
+            <circle class="coin" cx="100" cy="298" r="7" fill="#e6c67e"/>
+            <circle class="coin" style="animation-delay:-1.6s" cx="112" cy="216" r="8" fill="#ffd98a"/>
+          </a>
+          <!-- annotations -->
+          <g class="anno" font-family="Manrope,sans-serif" font-size="11" font-weight="700" letter-spacing="2">
+            <g><path d="M372 160 H440" stroke="rgba(201,164,88,.5)"/><circle cx="372" cy="160" r="3" fill="#e6c67e"/><text x="446" y="164" fill="#b9c2cf">RENOVATION</text></g>
+            <g><path d="M372 240 H440" stroke="rgba(201,164,88,.5)"/><circle cx="372" cy="240" r="3" fill="#e6c67e"/><text x="446" y="244" fill="#b9c2cf">COMMERCIAL 24/7</text></g>
+            <g><path d="M372 360 H440" stroke="rgba(201,164,88,.5)"/><circle cx="372" cy="360" r="3" fill="#e6c67e"/><text x="446" y="364" fill="#b9c2cf">LEGAL SUITE</text></g>
+            <g><path d="M118 176 H60" stroke="rgba(201,164,88,.5)"/><text x="54" y="180" fill="#b9c2cf" text-anchor="end">VALUE</text></g>
+          </g>
+        </g>
+      </svg>
+      <p class="ha-tip" id="ha-tip">Hover or tap a level of the model to see how we work on the same property.</p>
+    </div>
   </div>
 
   <span class="hero-tag" aria-hidden="true">Ontario · Construction + Real Estate</span>
@@ -143,172 +217,6 @@
         <p>Property strategy, value-add planning, renovation budgeting and investment-focused real-estate support.</p>
         <a class="go" href="real-estate.html">Explore Real Estate <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
-    </div>
-  </div>
-</section>
-
-<!-- ================= INTERACTIVE VALUE MAP ================= -->
-<section class="sec sec-alt" id="value-map">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="sec-num">One property, four paths</span>
-      <h2>See where the value <span class="gold">is added</span></h2>
-      <p>Tap the points on the building. Each one is a way we work on the same property, from the basement suite to the storefront to the resale numbers.</p>
-    </div>
-    <div class="xsec grid reveal" data-d="2">
-      <div class="xsec-art corner-frame">
-        <svg class="scene" viewBox="0 0 640 480" role="img" aria-label="Illustrated property at dusk showing four service paths: renovation upstairs, 24/7 commercial storefront, basement income suite and rising investment value">
-          <defs>
-            <clipPath id="sceneClip"><rect x="0" y="0" width="640" height="480" rx="10"/></clipPath>
-            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#241d4e"/><stop offset=".45" stop-color="#6d4a8f"/><stop offset=".78" stop-color="#e0705f"/><stop offset="1" stop-color="#ff9a62"/>
-            </linearGradient>
-            <linearGradient id="roomGlow" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#ffd98a"/><stop offset="1" stop-color="#f2a65a"/>
-            </linearGradient>
-            <radialGradient id="sunGlow"><stop offset="0" stop-color="#ffd98a" stop-opacity=".55"/><stop offset="1" stop-color="#ffd98a" stop-opacity="0"/></radialGradient>
-          </defs>
-          <g clip-path="url(#sceneClip)">
-            <!-- sky -->
-            <rect x="0" y="0" width="640" height="360" fill="url(#sky)"/>
-            <g fill="#ffffff" opacity=".8">
-              <circle cx="60" cy="60" r="1.6"/><circle cx="140" cy="38" r="1.2"/><circle cx="420" cy="30" r="1.5"/><circle cx="520" cy="52" r="1.2"/><circle cx="600" cy="88" r="1.6"/><circle cx="330" cy="66" r="1.1"/>
-            </g>
-            <circle cx="560" cy="300" r="70" fill="url(#sunGlow)"/>
-            <circle cx="560" cy="300" r="24" fill="#ffd98a"/>
-            <!-- clouds -->
-            <g class="cloud" style="animation-duration:44s" fill="#cbb7e0" opacity=".85">
-              <ellipse cx="90" cy="92" rx="42" ry="13"/><ellipse cx="66" cy="82" rx="24" ry="10"/><ellipse cx="116" cy="84" rx="20" ry="9"/>
-            </g>
-            <g class="cloud" style="animation-duration:58s; animation-delay:-22s" fill="#ffffff" opacity=".75">
-              <ellipse cx="400" cy="62" rx="36" ry="11"/><ellipse cx="378" cy="54" rx="20" ry="8"/><ellipse cx="424" cy="55" rx="17" ry="7"/>
-            </g>
-            <g class="cloud" style="animation-duration:50s; animation-delay:-38s" fill="#f3b7c9" opacity=".8">
-              <ellipse cx="240" cy="40" rx="30" ry="9"/><ellipse cx="222" cy="33" rx="16" ry="7"/>
-            </g>
-            <!-- hills -->
-            <path d="M0 344 Q160 300 320 344 T640 344 V480 H0 Z" fill="#2e6f6c"/>
-            <path d="M0 380 Q200 350 420 386 T640 376 V480 H0 Z" fill="#1f4f4c"/>
-            <!-- value arrow + coins -->
-            <g data-depth="1.4">
-              <path d="M436 190 C478 148 512 158 556 104" fill="none" stroke="#e6c67e" stroke-width="3.4" stroke-linecap="round"/>
-              <path d="M556 104 h-15 M556 104 v15" fill="none" stroke="#e6c67e" stroke-width="3.4" stroke-linecap="round"/>
-              <g class="coin"><circle cx="478" cy="152" r="11" fill="#e6c67e"/><text x="478" y="157" text-anchor="middle" font-family="Manrope,sans-serif" font-size="13" font-weight="800" fill="#241d4e">$</text></g>
-              <g class="coin" style="animation-delay:-1.4s"><circle cx="556" cy="104" r="13" fill="#ffd98a"/><text x="556" y="109" text-anchor="middle" font-family="Manrope,sans-serif" font-size="15" font-weight="800" fill="#241d4e">$</text></g>
-            </g>
-            <!-- maple tree -->
-            <g data-depth="1.15">
-              <path d="M92 344 C90 310 92 288 90 262" fill="none" stroke="#6b4632" stroke-width="7" stroke-linecap="round"/>
-              <g class="canopy" fill="#b3323c">
-                <circle cx="90" cy="238" r="36"/><circle cx="58" cy="260" r="24"/><circle cx="122" cy="258" r="24"/><circle cx="90" cy="270" r="26"/>
-              </g>
-              <circle cx="76" cy="232" r="10" fill="#d4505c" opacity=".8"/><circle cx="106" cy="248" r="8" fill="#8f2430" opacity=".8"/>
-            </g>
-            <!-- house -->
-            <g data-depth="1">
-              <!-- chimney + smoke -->
-              <rect x="318" y="92" width="26" height="52" fill="#8a4a3a"/>
-              <rect x="314" y="86" width="34" height="10" rx="2" fill="#a05a48"/>
-              <g fill="#e8dff2">
-                <circle class="smoke" cx="331" cy="78" r="7"/>
-                <circle class="smoke" style="animation-delay:-1.5s" cx="331" cy="78" r="9"/>
-                <circle class="smoke" style="animation-delay:-3s" cx="331" cy="78" r="6"/>
-              </g>
-              <!-- roof -->
-              <path d="M128 152 L260 66 L392 152 Z" fill="#c96f4a"/>
-              <path d="M128 152 L260 66 L392 152" fill="none" stroke="#8a4a3a" stroke-width="3"/>
-              <!-- upper floor -->
-              <rect x="150" y="150" width="220" height="92" fill="#f4e9d8"/>
-              <g class="win">
-                <rect x="180" y="172" width="46" height="46" rx="3" fill="url(#roomGlow)"/>
-                <rect x="294" y="172" width="46" height="46" rx="3" fill="url(#roomGlow)"/>
-              </g>
-              <path d="M203 172 v46 M180 195 h46 M317 172 v46 M294 195 h46" stroke="#8a4a3a" stroke-width="2.4"/>
-              <!-- main floor -->
-              <rect x="150" y="242" width="220" height="102" fill="#efe0c8"/>
-              <rect x="240" y="272" width="42" height="72" rx="2" fill="#c9a458"/>
-              <circle cx="274" cy="310" r="2.6" fill="#241d4e"/>
-              <rect class="win" x="170" y="266" width="52" height="50" rx="3" fill="url(#roomGlow)"/>
-              <path d="M196 266 v50 M170 291 h52" stroke="#8a4a3a" stroke-width="2.4"/>
-              <!-- storefront wing -->
-              <rect x="372" y="222" width="150" height="122" fill="#e8d9c0"/>
-              <g>
-                <path d="M366 222 h162 l-10 26 h-142 z" fill="#e0705f"/>
-                <path d="M386 222 l-6 26 M410 222 l-5 26 M434 222 l-4 26 M458 222 l-3 26 M482 222 l-2 26 M506 222 l-1 26" stroke="#f4e9d8" stroke-width="7"/>
-              </g>
-              <rect x="398" y="262" width="98" height="26" rx="3" fill="#241d4e"/>
-              <text x="447" y="280" text-anchor="middle" font-family="Manrope,sans-serif" font-size="14" font-weight="800" letter-spacing="2" fill="#e6c67e">OPEN 24/7</text>
-              <rect class="win" x="398" y="298" width="60" height="46" rx="3" fill="url(#roomGlow)"/>
-              <rect x="470" y="298" width="34" height="46" rx="2" fill="#c9a458"/>
-              <!-- basement cutaway -->
-              <rect x="140" y="344" width="240" height="128" fill="#3a2b23"/>
-              <g stroke="#2a1e18" stroke-width="2" opacity=".7">
-                <path d="M140 366 h240 M140 398 h240 M140 430 h240" stroke-dasharray="10 8"/>
-              </g>
-              <rect x="162" y="362" width="196" height="92" rx="4" fill="url(#roomGlow)"/>
-              <rect x="176" y="414" width="64" height="26" rx="3" fill="#8f2430"/>
-              <rect x="176" y="404" width="22" height="12" rx="3" fill="#b3323c"/>
-              <path d="M262 440 h72 M262 440 v-16 h22 v16 M312 424 h22 v16" stroke="#8a4a3a" stroke-width="3" fill="none"/>
-              <circle cx="298" cy="384" r="8" fill="#fff3d6"/><path d="M298 376 v-10" stroke="#8a4a3a" stroke-width="2.4"/>
-              <path d="M358 344 v26 h-20" fill="none" stroke="#f4e9d8" stroke-width="4"/>
-              <path d="M358 352 h-14 M358 360 h-14 M358 368 h-14" stroke="#f4e9d8" stroke-width="3"/>
-              <!-- path + shrubs -->
-              <path d="M262 472 C262 452 262 448 261 444" stroke="#d9c9a8" stroke-width="16" stroke-linecap="round" fill="none" opacity=".8"/>
-              <circle cx="120" cy="452" r="14" fill="#2e6f6c"/><circle cx="404" cy="456" r="12" fill="#2e6f6c"/><circle cx="560" cy="446" r="16" fill="#1f4f4c"/>
-            </g>
-            <!-- zones -->
-            <rect class="zone" data-zone="reno" x="150" y="150" width="220" height="92"></rect>
-            <rect class="zone" data-zone="comm" x="366" y="222" width="156" height="122"></rect>
-            <rect class="zone" data-zone="base" x="140" y="344" width="240" height="128"></rect>
-            <rect class="zone" data-zone="invest" x="430" y="70" width="180" height="130"></rect>
-            <!-- hotspots -->
-            <g class="hs" data-zone="reno" tabindex="0" role="button" aria-label="Home renovation and improvement">
-              <circle class="ring" cx="260" cy="196" r="15"/><circle class="dot" cx="260" cy="196" r="5"/>
-            </g>
-            <g class="hs" data-zone="comm" tabindex="0" role="button" aria-label="Commercial services, 24/7">
-              <circle class="ring" cx="447" cy="275" r="15"/><circle class="dot" cx="447" cy="275" r="5"/>
-            </g>
-            <g class="hs" data-zone="base" tabindex="0" role="button" aria-label="Basement income suite">
-              <circle class="ring" cx="260" cy="408" r="15"/><circle class="dot" cx="260" cy="408" r="5"/>
-            </g>
-            <g class="hs" data-zone="invest" tabindex="0" role="button" aria-label="Real estate and investment value">
-              <circle class="ring" cx="556" cy="104" r="15"/><circle class="dot" cx="556" cy="104" r="5"/>
-            </g>
-          </g>
-        </svg>
-      </div>
-      <div class="xsec-panel">
-        <div class="xp-item" data-panel="reno">
-          <span class="sec-num">01 · Main floor &amp; upper</span>
-          <h3>Home Renovation &amp; Improvement</h3>
-          <p>From a door, a floor or a bathroom to a whole-home renovation. We start with an on-site assessment and a budget, then handle drawings, permits, trades and materials until the final walkthrough.</p>
-          <a class="btn btn-ghost" href="renovation.html">Explore Renovation</a>
-        </div>
-        <div class="xp-item" data-panel="comm">
-          <span class="sec-num">02 · Storefront</span>
-          <h3>Commercial Services, 24/7</h3>
-          <p>Urgent repairs and on-site handyman support for commercial properties. One call reaches a coordinator who sends the right trade or certified partner, any hour of the day or night.</p>
-          <a class="btn btn-ghost" href="commercial.html">Explore Commercial Services</a>
-        </div>
-        <div class="xp-item" data-panel="base">
-          <span class="sec-num">03 · Basement</span>
-          <h3>Turn Your Basement Into Income</h3>
-          <p>A legal second suite with the financing coordinated alongside the build. Assessment, permit drawings, construction, city inspections and rental launch run as one project.</p>
-          <a class="btn btn-ghost" href="basement-income.html">Explore Basement Income</a>
-        </div>
-        <div class="xp-item" data-panel="invest">
-          <span class="sec-num">04 · The numbers</span>
-          <h3>Real Estate &amp; Investment</h3>
-          <p>Purchase price, renovation budget, gross rent, cash flow and cap rate looked at together before you commit, so the property is judged on what it could be, not just what it is.</p>
-          <a class="btn btn-ghost" href="real-estate.html">Explore Real Estate</a>
-        </div>
-        <div class="xp-tabs" role="tablist" aria-label="Service paths">
-          <button type="button" data-zone="reno">Renovation</button>
-          <button type="button" data-zone="comm">Commercial</button>
-          <button type="button" data-zone="base">Basement</button>
-          <button type="button" data-zone="invest">Investment</button>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -644,6 +552,6 @@
 
 <a class="callbar" href="tel:+14169300400">Call 416-930-0400 · 24/7 Service</a>
 
-<script src="assets/js/main.js?v=9"></script>
+<script src="assets/js/main.js?v=10"></script>
 </body>
 </html>

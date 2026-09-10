@@ -280,7 +280,8 @@ img.logo-mark{ object-fit:contain; }
   background:radial-gradient(ellipse 120% 90% at 50% 42%, transparent 55%, rgba(2,4,9,.6) 100%);
 }
 
-.hero-in{ width:min(1200px, 92vw); margin-inline:auto; position:relative; }
+.hero-in{ width:min(1200px, 92vw); margin-inline:auto; position:relative; display:grid; grid-template-columns:1.02fr .98fr; gap:clamp(24px,4vw,60px); align-items:center; }
+.hero-copy{ position:relative; }
 .hero .eyebrow{ margin-bottom:1.4em; }
 .hero h1{ max-width:16ch; }
 .hero h1 .ln{ display:block; overflow:hidden; padding-bottom:.08em; margin-bottom:-.08em; }
@@ -795,6 +796,36 @@ body{ padding-bottom:0; }
   .foot-grid{ grid-template-columns:1fr; }
   .btn-row .btn{ flex:1 1 100%; }
   .banner-in{ flex-direction:column; align-items:flex-start; }
+}
+
+/* ---------- hero isometric model ---------- */
+.hero-art{ position:relative; }
+.iso{ width:100%; height:auto; display:block; }
+.iso-floor{ cursor:pointer; outline:none; }
+.iso-floor .face{ transition:fill .35s, stroke .35s, filter .35s; }
+.iso-floor .glow{ filter:drop-shadow(0 0 10px rgba(230,198,126,.25)); }
+.iso-floor:hover .face, .iso-floor.on .face, .iso-floor:focus-visible .face{
+  stroke:var(--gold-hi); filter:drop-shadow(0 0 14px rgba(230,198,126,.35)) brightness(1.25);
+}
+.iso .float{ animation:iso-float 7s ease-in-out infinite alternate; }
+@keyframes iso-float{ from{ transform:translateY(-5px); } to{ transform:translateY(7px); } }
+.iso .scan{ animation:iso-scan 5.5s linear infinite; }
+@keyframes iso-scan{ from{ transform:translateY(0); } to{ transform:translateY(400px); } }
+.iso .beacon{ animation:win-glow 2.4s ease-in-out infinite alternate; }
+.iso .coin{ animation:bob 3.2s ease-in-out infinite alternate; }
+.ha-tip{
+  margin-top:10px; padding:.85em 1.1em; min-height:3.6em;
+  border:1px solid var(--line); border-left:2px solid var(--gold);
+  background:rgba(10,18,32,.72); border-radius:3px;
+  font-size:.84rem; line-height:1.55; color:var(--silver);
+  transition:opacity .3s;
+}
+@media (max-width:900px){
+  .hero-in{ grid-template-columns:1fr; }
+  .hero-art{ max-width:520px; margin-inline:auto; width:100%; }
+}
+@media (prefers-reduced-motion:reduce){
+  .iso .float, .iso .scan, .iso .beacon, .iso .coin{ animation:none; }
 }
 
 /* ---------- interactive value map (homepage) ---------- */

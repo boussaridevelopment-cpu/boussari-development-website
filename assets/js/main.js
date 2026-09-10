@@ -199,6 +199,37 @@
     }
   }
 
+  /* ---------- hero isometric model ---------- */
+  var isoFloors = document.querySelectorAll(".iso-floor");
+  var tip = document.getElementById("ha-tip");
+  if (isoFloors.length && tip) {
+    var tips = {
+      reno: "Home Renovation & Improvement — from a door and a floor to a whole-home renovation, with one coordinator from start to close.",
+      comm: "Commercial Services — urgent repairs and on-site handyman support for commercial properties, 24/7.",
+      base: "Basement Income — a legal second suite with the financing coordinated alongside the build, assessment to rent.",
+      invest: "Real Estate & Investment — purchase price, renovation budget, gross rent, cash flow and cap rate looked at together."
+    };
+    var tipDefault = tip.textContent;
+    var isoKeys = ["reno", "comm", "base", "invest"];
+    var isoAuto = null;
+    var setIso = function (k) {
+      isoFloors.forEach(function (f) { f.classList.toggle("on", f.getAttribute("data-key") === k); });
+      tip.textContent = tips[k] || tipDefault;
+    };
+    var stopIso = function () { if (isoAuto) { clearInterval(isoAuto); isoAuto = null; } };
+    isoFloors.forEach(function (f) {
+      var k = f.getAttribute("data-key");
+      f.addEventListener("pointerenter", function () { stopIso(); setIso(k); });
+      f.addEventListener("focus", function () { stopIso(); setIso(k); });
+      f.addEventListener("pointerleave", function () { f.classList.remove("on"); tip.textContent = tipDefault; });
+      f.addEventListener("blur", function () { f.classList.remove("on"); tip.textContent = tipDefault; });
+    });
+    if (!reduceMotion) {
+      var ii = 0;
+      isoAuto = setInterval(function () { ii = (ii + 1) % isoKeys.length; setIso(isoKeys[ii]); }, 4200);
+    }
+  }
+
   /* ---------- footer year ---------- */
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = new Date().getFullYear();
