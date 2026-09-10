@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=7">
+<link rel="stylesheet" href="assets/css/style.css?v=8">
 <noscript><style>.reveal{opacity:1;transform:none}.hero h1 .ln > span{transform:none}.hero-sub,.hero-cta,.hero-note,.scroll-cue{opacity:1}</style></noscript>
 <script type="application/ld+json">
 {
@@ -143,6 +143,107 @@
         <p>Property strategy, value-add planning, renovation budgeting and investment-focused real-estate support.</p>
         <a class="go" href="real-estate.html">Explore Real Estate <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INTERACTIVE VALUE MAP ================= -->
+<section class="sec sec-alt" id="value-map">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-num">One property, four paths</span>
+      <h2>See where the value <span class="gold">is added</span></h2>
+      <p>Tap the points on the building. Each one is a way we work on the same property, from the basement suite to the storefront to the resale numbers.</p>
+    </div>
+    <div class="xsec grid reveal" data-d="2">
+      <div class="xsec-art corner-frame">
+        <svg viewBox="0 0 560 480" role="img" aria-label="Cutaway of a mixed-use property showing four service paths: renovation, commercial services, basement income and investment value">
+          <!-- zone hit areas -->
+          <rect class="zone" data-zone="reno" x="60" y="90" width="320" height="120"></rect>
+          <rect class="zone" data-zone="comm" x="60" y="210" width="320" height="120"></rect>
+          <rect class="zone" data-zone="base" x="60" y="330" width="320" height="120"></rect>
+          <rect class="zone" data-zone="invest" x="430" y="60" width="125" height="250"></rect>
+          <!-- building line art -->
+          <g fill="none" stroke="#b9c2cf" stroke-opacity=".5" stroke-width="1.2">
+            <path d="M60 90 L220 20 L380 90"/>
+            <rect x="60" y="90" width="320" height="120"/>
+            <rect x="60" y="210" width="320" height="120"/>
+            <rect x="60" y="330" width="320" height="120"/>
+            <path d="M20 330 H540" stroke-dasharray="5 6"/>
+            <!-- upper floor: renovation -->
+            <rect x="90" y="120" width="52" height="46"/>
+            <path d="M90 143 h52 M116 120 v46"/>
+            <path d="M200 166 h120 M200 166 v-24 h34 v24 M286 142 h34 v24"/>
+            <circle cx="252" cy="150" r="6"/>
+            <!-- storefront: commercial -->
+            <path d="M84 236 h132 l-8 16 h-116 z"/>
+            <path d="M96 252 v54 M132 252 v54 M168 252 v54 M204 252 v54"/>
+            <rect x="240" y="252" width="52" height="54"/>
+            <circle cx="284" cy="280" r="2.4"/>
+            <rect x="312" y="252" width="48" height="40"/>
+            <path d="M312 272 h48"/>
+            <!-- basement: income suite -->
+            <path d="M356 330 v34 h-24"/>
+            <path d="M356 340 h-16 M356 350 h-16 M356 360 h-16"/>
+            <rect x="96" y="398" width="86" height="30"/>
+            <rect x="96" y="386" width="26" height="12"/>
+            <path d="M220 428 h96 M220 428 v-20 h28 v20 M288 408 h28 v20"/>
+            <circle cx="262" cy="372" r="7"/>
+            <path d="M262 365 v-11"/>
+            <!-- value curve: investment -->
+            <path d="M450 300 V80 M450 300 H545"/>
+            <path d="M460 272 L492 220 L512 240 L540 150" stroke="#c9a458" stroke-opacity=".8"/>
+            <path d="M540 150 h-13 M540 150 v13" stroke="#c9a458" stroke-opacity=".8"/>
+            <circle cx="492" cy="220" r="3" stroke="#c9a458" stroke-opacity=".8"/>
+            <circle cx="512" cy="240" r="3" stroke="#c9a458" stroke-opacity=".8"/>
+          </g>
+          <!-- hotspots -->
+          <g class="hs" data-zone="reno" tabindex="0" role="button" aria-label="Home renovation and improvement">
+            <circle class="ring" cx="220" cy="150" r="15"/><circle class="dot" cx="220" cy="150" r="5"/>
+          </g>
+          <g class="hs" data-zone="comm" tabindex="0" role="button" aria-label="Commercial services, 24/7">
+            <circle class="ring" cx="220" cy="270" r="15"/><circle class="dot" cx="220" cy="270" r="5"/>
+          </g>
+          <g class="hs" data-zone="base" tabindex="0" role="button" aria-label="Basement income suite">
+            <circle class="ring" cx="220" cy="392" r="15"/><circle class="dot" cx="220" cy="392" r="5"/>
+          </g>
+          <g class="hs" data-zone="invest" tabindex="0" role="button" aria-label="Real estate and investment value">
+            <circle class="ring" cx="540" cy="150" r="15"/><circle class="dot" cx="540" cy="150" r="5"/>
+          </g>
+        </svg>
+      </div>
+      <div class="xsec-panel">
+        <div class="xp-item" data-panel="reno">
+          <span class="sec-num">01 · Main floor &amp; upper</span>
+          <h3>Home Renovation &amp; Improvement</h3>
+          <p>From a door, a floor or a bathroom to a whole-home renovation. We start with an on-site assessment and a budget, then handle drawings, permits, trades and materials until the final walkthrough.</p>
+          <a class="btn btn-ghost" href="renovation.html">Explore Renovation</a>
+        </div>
+        <div class="xp-item" data-panel="comm">
+          <span class="sec-num">02 · Storefront</span>
+          <h3>Commercial Services, 24/7</h3>
+          <p>Urgent repairs and on-site handyman support for commercial properties. One call reaches a coordinator who sends the right trade or certified partner, any hour of the day or night.</p>
+          <a class="btn btn-ghost" href="commercial.html">Explore Commercial Services</a>
+        </div>
+        <div class="xp-item" data-panel="base">
+          <span class="sec-num">03 · Basement</span>
+          <h3>Turn Your Basement Into Income</h3>
+          <p>A legal second suite with the financing coordinated alongside the build. Assessment, permit drawings, construction, city inspections and rental launch run as one project.</p>
+          <a class="btn btn-ghost" href="basement-income.html">Explore Basement Income</a>
+        </div>
+        <div class="xp-item" data-panel="invest">
+          <span class="sec-num">04 · The numbers</span>
+          <h3>Real Estate &amp; Investment</h3>
+          <p>Purchase price, renovation budget, gross rent, cash flow and cap rate looked at together before you commit, so the property is judged on what it could be, not just what it is.</p>
+          <a class="btn btn-ghost" href="real-estate.html">Explore Real Estate</a>
+        </div>
+        <div class="xp-tabs" role="tablist" aria-label="Service paths">
+          <button type="button" data-zone="reno">Renovation</button>
+          <button type="button" data-zone="comm">Commercial</button>
+          <button type="button" data-zone="base">Basement</button>
+          <button type="button" data-zone="invest">Investment</button>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -478,6 +579,6 @@
 
 <a class="callbar" href="tel:+14169300400">Call 416-930-0400 · 24/7 Service</a>
 
-<script src="assets/js/main.js?v=7"></script>
+<script src="assets/js/main.js?v=8"></script>
 </body>
 </html>

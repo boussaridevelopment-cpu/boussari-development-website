@@ -153,6 +153,35 @@
     });
   });
 
+  /* ---------- interactive value map (homepage) ---------- */
+  var zoneEls = document.querySelectorAll("[data-zone]");
+  if (zoneEls.length) {
+    var keys = ["reno", "comm", "base", "invest"];
+    var autoTimer = null;
+    var setZone = function (k) {
+      document.querySelectorAll("[data-zone]").forEach(function (el) {
+        el.classList.toggle("on", el.getAttribute("data-zone") === k);
+      });
+      document.querySelectorAll("[data-panel]").forEach(function (el) {
+        el.classList.toggle("on", el.getAttribute("data-panel") === k);
+      });
+    };
+    var stopAuto = function () {
+      if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
+    };
+    zoneEls.forEach(function (el) {
+      el.addEventListener("click", function () { stopAuto(); setZone(el.getAttribute("data-zone")); });
+      el.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); stopAuto(); setZone(el.getAttribute("data-zone")); }
+      });
+    });
+    setZone("reno");
+    if (!reduceMotion) {
+      var zi = 0;
+      autoTimer = setInterval(function () { zi = (zi + 1) % keys.length; setZone(keys[zi]); }, 5200);
+    }
+  }
+
   /* ---------- footer year ---------- */
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = new Date().getFullYear();
