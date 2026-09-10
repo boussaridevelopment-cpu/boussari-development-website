@@ -180,6 +180,23 @@
       var zi = 0;
       autoTimer = setInterval(function () { zi = (zi + 1) % keys.length; setZone(keys[zi]); }, 5200);
     }
+    /* mouse parallax on the illustrated scene */
+    var art = document.querySelector(".xsec-art");
+    var layers = art ? art.querySelectorAll("[data-depth]") : [];
+    if (art && layers.length && !reduceMotion) {
+      art.addEventListener("pointermove", function (e) {
+        var r = art.getBoundingClientRect();
+        var dx = (e.clientX - r.left - r.width / 2) / r.width;
+        var dy = (e.clientY - r.top - r.height / 2) / r.height;
+        layers.forEach(function (l) {
+          var d = parseFloat(l.getAttribute("data-depth")) || 1;
+          l.style.transform = "translate(" + (dx * d * 14).toFixed(1) + "px," + (dy * d * 9).toFixed(1) + "px)";
+        });
+      });
+      art.addEventListener("pointerleave", function () {
+        layers.forEach(function (l) { l.style.transform = "translate(0,0)"; });
+      });
+    }
   }
 
   /* ---------- footer year ---------- */

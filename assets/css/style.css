@@ -806,6 +806,24 @@ body{ padding-bottom:0; }
   border:1px solid var(--line-2); border-radius:3px; padding:clamp(12px,2vw,26px);
 }
 .xsec-art svg{ width:100%; height:auto; display:block; }
+.scene .cloud{ animation:cloud-move 50s linear infinite; }
+@keyframes cloud-move{ from{ transform:translateX(-160px); } to{ transform:translateX(760px); } }
+.scene .smoke{ opacity:0; animation:smoke-rise 4.5s ease-out infinite; }
+@keyframes smoke-rise{
+  0%{ transform:translate(0,0) scale(.6); opacity:.5; }
+  100%{ transform:translate(-16px,-72px) scale(1.7); opacity:0; }
+}
+.scene .win{ animation:win-glow 4s ease-in-out infinite alternate; }
+@keyframes win-glow{ from{ opacity:.82; } to{ opacity:1; } }
+.scene .canopy{ transform-origin:90px 300px; animation:sway 7s ease-in-out infinite alternate; }
+@keyframes sway{ from{ transform:rotate(-1.6deg); } to{ transform:rotate(1.6deg); } }
+.scene .coin{ animation:bob 3.2s ease-in-out infinite alternate; }
+@keyframes bob{ from{ transform:translateY(0); } to{ transform:translateY(-7px); } }
+.scene [data-depth]{ transition:transform .25s ease-out; }
+@media (prefers-reduced-motion:reduce){
+  .scene .cloud, .scene .smoke, .scene .win, .scene .canopy, .scene .coin{ animation:none; }
+  .scene .smoke{ opacity:.35; }
+}
 .zone{ fill:rgba(201,164,88,0); transition:fill .45s; cursor:pointer; }
 .zone.on{ fill:rgba(201,164,88,.10); }
 .hs{ cursor:pointer; outline:none; }
