@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Project Gallery | Boussari Development</title>
-<meta name="description" content="Explore Boussari Development project photos: kitchens, bathrooms, basements, interior finishes, exteriors and renovation work in progress.">
+<meta name="description" content="See three matched before-and-after renovations: a kitchen, bathroom and stone exterior.">
 <meta name="theme-color" content="#05080f">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,199 +41,19 @@
 </header>
 
 <main id="main">
-<section class="page-hero gallery-hero">
-<div class="wrap hero-in">
+<style>
+.project-stories{display:grid;gap:64px}.project-story{scroll-margin-top:110px;border-top:1px solid var(--line);padding-top:28px}.story-heading{display:flex;gap:30px;align-items:start;justify-content:space-between;margin-bottom:24px}.story-heading h2{font-size:clamp(1.7rem,3vw,2.5rem);margin:0}.story-heading p{max-width:480px;color:var(--silver);margin:0}.project-story .comparison-pair{gap:20px}.project-story figure{margin:0;min-width:0}.project-story figcaption{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;margin:0 0 12px;color:var(--gold)}.project-story img{display:block;width:100%;height:clamp(240px,34vw,430px);object-fit:contain;background:#101820}.project-story .photo-open{border:1px solid var(--line)}.story-nav{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.story-nav a{border:1px solid var(--line);padding:10px 18px;font-size:.86rem}.story-hint{font-size:.8rem;color:var(--muted);margin-top:12px}@media(max-width:650px){.story-heading{display:block}.story-heading p{margin-top:14px}.project-story .comparison-pair{grid-template-columns:1fr;gap:24px}.project-story img{height:auto;max-height:450px}.project-stories{gap:42px}}
+</style>
+<section class="page-hero gallery-hero"><div class="wrap hero-in">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Gallery</span></nav>
-<p class="eyebrow no-line">A closer look at the work</p>
-<h1>Real spaces.<br><span class="gold">Work you can see.</span></h1>
-<p class="lead">Explore finished rooms, the details that bring them together, and the work behind the walls. Choose a category, then open any photo for a closer look.</p></div>
-</section>
-<section class="sec gallery-section" id="gallery">
-<div class="wrap">
-<div class="gallery-toolbar">
-<div class="filters" role="group" aria-label="Filter photos by category"><button type="button" data-filter="all" aria-controls="project-photos" aria-pressed="true" class="on">All photos</button><button type="button" data-filter="kitchen" aria-controls="project-photos" aria-pressed="false">Kitchens</button><button type="button" data-filter="bathroom" aria-controls="project-photos" aria-pressed="false">Bathrooms</button><button type="button" data-filter="basement" aria-controls="project-photos" aria-pressed="false">Basements</button><button type="button" data-filter="interiors" aria-controls="project-photos" aria-pressed="false">Interiors & finishes</button><button type="button" data-filter="exterior" aria-controls="project-photos" aria-pressed="false">Exteriors</button><button type="button" data-filter="progress" aria-controls="project-photos" aria-pressed="false">In progress</button></div>
-<p id="gallery-count" role="status" aria-live="polite">28 photos</p></div>
-<div class="grid gallery real-gallery" id="project-photos">
-<article class="g-item" data-cat="kitchen"><a class="photo-open" href="assets/img/hamid/kitchen-island.webp" data-caption="Kitchen with an island — White cabinetry, a central island and wood flooring." aria-label="Open photo: Kitchen with an island">
-<div class="thumb"><img src="assets/img/hamid/kitchen-island-thumb.webp" alt="White cabinetry, a central island and wood flooring." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Kitchens</span>
-<h2>Kitchen with an island</h2></div>
-</article>
-<article class="g-item" data-cat="kitchen"><a class="photo-open" href="assets/img/hamid/galley-kitchen.webp" data-caption="A brighter galley kitchen — Cabinetry and counters in a narrow kitchen layout." aria-label="Open photo: A brighter galley kitchen">
-<div class="thumb"><img src="assets/img/hamid/galley-kitchen-thumb.webp" alt="Cabinetry and counters in a narrow kitchen layout." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Kitchens</span>
-<h2>A brighter galley kitchen</h2></div>
-</article>
-<article class="g-item" data-cat="bathroom"><a class="photo-open" href="assets/img/hamid/bathroom-tub.webp" data-caption="Bathroom with a freestanding tub — A bright bathroom with a tub beneath the window." aria-label="Open photo: Bathroom with a freestanding tub">
-<div class="thumb"><img src="assets/img/hamid/bathroom-tub-thumb.webp" alt="A bright bathroom with a tub beneath the window." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Bathrooms</span>
-<h2>Bathroom with a freestanding tub</h2></div>
-</article>
-<article class="g-item" data-cat="bathroom"><a class="photo-open" href="assets/img/hamid/bathroom-double-vanity.webp" data-caption="Double vanity and walk-in shower — Bathroom cabinetry, tile and glass shower enclosure." aria-label="Open photo: Double vanity and walk-in shower">
-<div class="thumb"><img src="assets/img/hamid/bathroom-double-vanity-thumb.webp" alt="Bathroom cabinetry, tile and glass shower enclosure." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Bathrooms</span>
-<h2>Double vanity and walk-in shower</h2></div>
-</article>
-<article class="g-item" data-cat="basement"><a class="photo-open" href="assets/img/hamid/basement-living.webp" data-caption="Finished basement living space — Flooring, recessed lighting and a fireplace feature." aria-label="Open photo: Finished basement living space">
-<div class="thumb"><img src="assets/img/hamid/basement-living-thumb.webp" alt="Flooring, recessed lighting and a fireplace feature." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Basements</span>
-<h2>Finished basement living space</h2></div>
-</article>
-<article class="g-item" data-cat="basement"><a class="photo-open" href="assets/img/hamid/basement-hall.webp" data-caption="Basement finishing details — New doors, flooring and recessed lighting." aria-label="Open photo: Basement finishing details">
-<div class="thumb"><img src="assets/img/hamid/basement-hall-thumb.webp" alt="New doors, flooring and recessed lighting." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Basements</span>
-<h2>Basement finishing details</h2></div>
-</article>
-<article class="g-item" data-cat="interiors"><a class="photo-open" href="assets/img/hamid/living-room.webp" data-caption="Living room renovation — Finished living space with a fireplace and large windows." aria-label="Open photo: Living room renovation">
-<div class="thumb"><img src="assets/img/hamid/living-room-thumb.webp" alt="Finished living space with a fireplace and large windows." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Interiors & finishes</span>
-<h2>Living room renovation</h2></div>
-</article>
-<article class="g-item" data-cat="interiors"><a class="photo-open" href="assets/img/hamid/open-plan-stair.webp" data-caption="Open-plan living and stairs — Wood flooring, an open staircase and a connected main floor." aria-label="Open photo: Open-plan living and stairs">
-<div class="thumb"><img src="assets/img/hamid/open-plan-stair-thumb.webp" alt="Wood flooring, an open staircase and a connected main floor." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Interiors & finishes</span>
-<h2>Open-plan living and stairs</h2></div>
-</article>
-<article class="g-item" data-cat="interiors"><a class="photo-open" href="assets/img/hamid/paint-trim.webp" data-caption="Paint, trim and flooring — Finishing work around existing arches and wall openings." aria-label="Open photo: Paint, trim and flooring">
-<div class="thumb"><img src="assets/img/hamid/paint-trim-thumb.webp" alt="Finishing work around existing arches and wall openings." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Interiors & finishes</span>
-<h2>Paint, trim and flooring</h2></div>
-</article>
-<article class="g-item" data-cat="interiors"><a class="photo-open" href="assets/img/hamid/trim-detail.webp" data-caption="Trim and corner details — A closer look at interior finishing." aria-label="Open photo: Trim and corner details">
-<div class="thumb"><img src="assets/img/hamid/trim-detail-thumb.webp" alt="A closer look at interior finishing." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Interiors & finishes</span>
-<h2>Trim and corner details</h2></div>
-</article>
-<article class="g-item" data-cat="exterior"><a class="photo-open" href="assets/img/hamid/exterior-front.webp" data-caption="Updated front exterior — Stonework, entrance steps and large front windows." aria-label="Open photo: Updated front exterior">
-<div class="thumb"><img src="assets/img/hamid/exterior-front-thumb.webp" alt="Stonework, entrance steps and large front windows." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Exteriors</span>
-<h2>Updated front exterior</h2></div>
-</article>
-<article class="g-item" data-cat="exterior"><a class="photo-open" href="assets/img/hamid/exterior-rear.webp" data-caption="Rear addition and yard — A completed rear exterior with doors opening to the yard." aria-label="Open photo: Rear addition and yard">
-<div class="thumb"><img src="assets/img/hamid/exterior-rear-thumb.webp" alt="A completed rear exterior with doors opening to the yard." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Exteriors</span>
-<h2>Rear addition and yard</h2></div>
-</article>
-<article class="g-item" data-cat="exterior"><a class="photo-open" href="assets/img/hamid/stone-exterior.webp" data-caption="Stone exterior renovation — Stone cladding across a two-storey home." aria-label="Open photo: Stone exterior renovation">
-<div class="thumb"><img src="assets/img/hamid/stone-exterior-thumb.webp" alt="Stone cladding across a two-storey home." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Exteriors</span>
-<h2>Stone exterior renovation</h2></div>
-</article>
-<article class="g-item" data-cat="exterior"><a class="photo-open" href="assets/img/hamid/side-exterior.webp" data-caption="Exterior wall and window work — A finished side elevation with updated windows." aria-label="Open photo: Exterior wall and window work">
-<div class="thumb"><img src="assets/img/hamid/side-exterior-thumb.webp" alt="A finished side elevation with updated windows." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Exteriors</span>
-<h2>Exterior wall and window work</h2></div>
-</article>
-<article class="g-item" data-cat="progress"><a class="photo-open" href="assets/img/hamid/interior-framing.webp" data-caption="Inside the renovation — Interior framing before the walls and finishes go in." aria-label="Open photo: Inside the renovation">
-<div class="thumb"><img src="assets/img/hamid/interior-framing-thumb.webp" alt="Interior framing before the walls and finishes go in." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">In progress</span>
-<h2>Inside the renovation</h2></div>
-</article>
-<article class="g-item" data-cat="progress"><a class="photo-open" href="assets/img/hamid/addition-framing.webp" data-caption="Addition framing — Wall and ceiling framing around a large window opening." aria-label="Open photo: Addition framing">
-<div class="thumb"><img src="assets/img/hamid/addition-framing-thumb.webp" alt="Wall and ceiling framing around a large window opening." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">In progress</span>
-<h2>Addition framing</h2></div>
-</article>
-<article class="g-item" data-cat="progress"><a class="photo-open" href="assets/img/hamid/basement-preparation.webp" data-caption="Basement floor preparation — Work below the finished floor, during construction." aria-label="Open photo: Basement floor preparation">
-<div class="thumb"><img src="assets/img/hamid/basement-preparation-thumb.webp" alt="Work below the finished floor, during construction." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">In progress</span>
-<h2>Basement floor preparation</h2></div>
-</article>
-<article class="g-item" data-cat="progress"><a class="photo-open" href="assets/img/hamid/shower-preparation.webp" data-caption="Shower preparation — The shower area before the final fixtures and glass." aria-label="Open photo: Shower preparation">
-<div class="thumb"><img src="assets/img/hamid/shower-preparation-thumb.webp" alt="The shower area before the final fixtures and glass." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">In progress</span>
-<h2>Shower preparation</h2></div>
-</article>
-<article class="g-item" data-cat="kitchen"><a class="photo-open" href="assets/img/hamid/kitchen-cabinetry.webp" data-caption="Cabinetry and island details — A closer view of the kitchen island and lighting." aria-label="Open photo: Cabinetry and island details">
-<div class="thumb"><img src="assets/img/hamid/kitchen-cabinetry-thumb.webp" alt="A closer view of the kitchen island and lighting." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Kitchens</span>
-<h2>Cabinetry and island details</h2></div>
-</article>
-<article class="g-item" data-cat="kitchen"><a class="photo-open" href="assets/img/hamid/kitchen-storage.webp" data-caption="Kitchen storage and finishes — Built-in storage, counters and tile backsplash." aria-label="Open photo: Kitchen storage and finishes">
-<div class="thumb"><img src="assets/img/hamid/kitchen-storage-thumb.webp" alt="Built-in storage, counters and tile backsplash." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Kitchens</span>
-<h2>Kitchen storage and finishes</h2></div>
-</article>
-<article class="g-item" data-cat="bathroom"><a class="photo-open" href="assets/img/hamid/bathroom-shower.webp" data-caption="Shower and bathroom refresh — A glass shower enclosure with a stone-pattern feature wall." aria-label="Open photo: Shower and bathroom refresh">
-<div class="thumb"><img src="assets/img/hamid/bathroom-shower-thumb.webp" alt="A glass shower enclosure with a stone-pattern feature wall." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Bathrooms</span>
-<h2>Shower and bathroom refresh</h2></div>
-</article>
-<article class="g-item" data-cat="bathroom"><a class="photo-open" href="assets/img/hamid/bathroom-glass.webp" data-caption="Glass shower enclosure — Tile walls and a glass enclosure beside the vanity." aria-label="Open photo: Glass shower enclosure">
-<div class="thumb"><img src="assets/img/hamid/bathroom-glass-thumb.webp" alt="Tile walls and a glass enclosure beside the vanity." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Bathrooms</span>
-<h2>Glass shower enclosure</h2></div>
-</article>
-<article class="g-item" data-cat="interiors"><a class="photo-open" href="assets/img/hamid/hallway-doors.webp" data-caption="Hallway and interior doors — Door installation, wall finishes and wood flooring." aria-label="Open photo: Hallway and interior doors">
-<div class="thumb"><img src="assets/img/hamid/hallway-doors-thumb.webp" alt="Door installation, wall finishes and wood flooring." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Interiors & finishes</span>
-<h2>Hallway and interior doors</h2></div>
-</article>
-<article class="g-item" data-cat="interiors"><a class="photo-open" href="assets/img/hamid/fireplace-builtins.webp" data-caption="Fireplace and built-in shelving — A fireplace feature flanked by fitted storage." aria-label="Open photo: Fireplace and built-in shelving">
-<div class="thumb"><img src="assets/img/hamid/fireplace-builtins-thumb.webp" alt="A fireplace feature flanked by fitted storage." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Interiors & finishes</span>
-<h2>Fireplace and built-in shelving</h2></div>
-</article>
-<article class="g-item" data-cat="progress"><a class="photo-open" href="assets/img/hamid/framing-in-progress.webp" data-caption="Walls taking shape — Framing during an interior renovation." aria-label="Open photo: Walls taking shape">
-<div class="thumb"><img src="assets/img/hamid/framing-in-progress-thumb.webp" alt="Framing during an interior renovation." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">In progress</span>
-<h2>Walls taking shape</h2></div>
-</article>
-<article class="g-item" data-cat="progress"><a class="photo-open" href="assets/img/hamid/bathroom-framing.webp" data-caption="Bathroom framing — The structure behind the finished bathroom." aria-label="Open photo: Bathroom framing">
-<div class="thumb"><img src="assets/img/hamid/bathroom-framing-thumb.webp" alt="The structure behind the finished bathroom." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">In progress</span>
-<h2>Bathroom framing</h2></div>
-</article>
-<article class="g-item" data-cat="exterior"><a class="photo-open" href="assets/img/hamid/stonework-detail.webp" data-caption="Stonework detail — A close view of exterior stone cladding." aria-label="Open photo: Stonework detail">
-<div class="thumb"><img src="assets/img/hamid/stonework-detail-thumb.webp" alt="A close view of exterior stone cladding." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">Exteriors</span>
-<h2>Stonework detail</h2></div>
-</article>
-<article class="g-item" data-cat="progress"><a class="photo-open" href="assets/img/hamid/deck-in-progress.webp" data-caption="Deck work in progress — Outdoor decking during installation." aria-label="Open photo: Deck work in progress">
-<div class="thumb"><img src="assets/img/hamid/deck-in-progress-thumb.webp" alt="Outdoor decking during installation." loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></div></a>
-<div class="meta"><span class="cat">In progress</span>
-<h2>Deck work in progress</h2></div>
-</article></div></div>
-</section>
-<section class="sec sec-alt" id="before-after">
-<div class="wrap">
-<div class="sec-head"><span class="eyebrow">Before &amp; after</span>
-<h2>See what changed</h2>
-<p>Earlier spaces and construction stages, alongside the finished work.</p></div>
-<div class="comparison-grid">
-<article class="comparison">
-<h3>Kitchen renovation</h3>
-<div class="comparison-pair">
-<figure><a class="photo-open" href="assets/img/hamid/kitchen-before.webp" data-caption="Kitchen renovation — Before / in progress" aria-label="Open kitchen renovation photo: Before / in progress"><img  src="assets/img/hamid/kitchen-before.webp" alt="Kitchen renovation — Before / in progress" loading="lazy" decoding="async"></a><figcaption>Before / in progress</figcaption>
-</figure>
-<figure><a class="photo-open" href="assets/img/hamid/galley-kitchen.webp" data-caption="Kitchen renovation — After" aria-label="Open kitchen renovation photo: After"><img  src="assets/img/hamid/galley-kitchen.webp" alt="Kitchen renovation — After" loading="lazy" decoding="async"></a><figcaption>After</figcaption>
-</figure></div>
-</article>
-<article class="comparison">
-<h3>Bathroom renovation</h3>
-<div class="comparison-pair">
-<figure><a class="photo-open" href="assets/img/hamid/bathroom-before.webp" data-caption="Bathroom renovation — Before / in progress" aria-label="Open bathroom renovation photo: Before / in progress"><img  src="assets/img/hamid/bathroom-before.webp" alt="Bathroom renovation — Before / in progress" loading="lazy" decoding="async"></a><figcaption>Before / in progress</figcaption>
-</figure>
-<figure><a class="photo-open" href="assets/img/hamid/bathroom-tub.webp" data-caption="Bathroom renovation — After" aria-label="Open bathroom renovation photo: After"><img  src="assets/img/hamid/bathroom-tub.webp" alt="Bathroom renovation — After" loading="lazy" decoding="async"></a><figcaption>After</figcaption>
-</figure></div>
-</article>
-<article class="comparison">
-<h3>Basement finishing</h3>
-<div class="comparison-pair">
-<figure><a class="photo-open" href="assets/img/hamid/basement-before.webp" data-caption="Basement finishing — Before / in progress" aria-label="Open basement finishing photo: Before / in progress"><img  src="assets/img/hamid/basement-before.webp" alt="Basement finishing — Before / in progress" loading="lazy" decoding="async"></a><figcaption>Before / in progress</figcaption>
-</figure>
-<figure><a class="photo-open" href="assets/img/hamid/basement-living.webp" data-caption="Basement finishing — After" aria-label="Open basement finishing photo: After"><img  src="assets/img/hamid/basement-living.webp" alt="Basement finishing — After" loading="lazy" decoding="async"></a><figcaption>After</figcaption>
-</figure></div>
-</article>
-<article class="comparison">
-<h3>Exterior renovation</h3>
-<div class="comparison-pair">
-<figure><a class="photo-open" href="assets/img/hamid/exterior-before.webp" data-caption="Exterior renovation — Before / in progress" aria-label="Open exterior renovation photo: Before / in progress"><img  src="assets/img/hamid/exterior-before.webp" alt="Exterior renovation — Before / in progress" loading="lazy" decoding="async"></a><figcaption>Before / in progress</figcaption>
-</figure>
-<figure><a class="photo-open" href="assets/img/hamid/stone-exterior.webp" data-caption="Exterior renovation — After" aria-label="Open exterior renovation photo: After"><img  src="assets/img/hamid/stone-exterior.webp" alt="Exterior renovation — After" loading="lazy" decoding="async"></a><figcaption>After</figcaption>
-</figure></div>
-</article></div></div>
-</section>
+<p class="eyebrow no-line">Before &amp; after</p><h1>The same space.<br><span class="gold">A new result.</span></h1>
+<p class="lead">See where each renovation started and how it finished. Every pair below shows the same project.</p>
+<nav class="story-nav" aria-label="Project comparisons"><a href="#kitchen">Kitchen</a><a href="#bathroom">Bathroom</a><a href="#exterior">Exterior</a></nav>
+</div></section><section class="sec" id="before-after"><div class="wrap project-stories">
+<article class="project-story comparison" id="kitchen" data-project="kitchen"><div class="story-heading"><h2>Kitchen renovation</h2><p>Updated cabinetry, counters and flooring bring a brighter finish to the same narrow kitchen.</p></div><div class="comparison-pair"><figure><figcaption>Before</figcaption><a class="photo-open" href="assets/img/hamid/kitchen-before.webp" data-caption="Kitchen renovation — Before" aria-label="Open kitchen renovation: before"><img src="assets/img/hamid/kitchen-before.webp" alt="Kitchen renovation, before the work" loading="lazy" decoding="async"></a></figure><figure><figcaption>After</figcaption><a class="photo-open" href="assets/img/hamid/galley-kitchen.webp" data-caption="Kitchen renovation — After" aria-label="Open kitchen renovation: after"><img src="assets/img/hamid/galley-kitchen.webp" alt="Kitchen renovation, after the work" loading="lazy" decoding="async"></a></figure></div><p class="story-hint">Open either photo to compare this project at full size.</p></article>
+<article class="project-story comparison" id="bathroom" data-project="bathroom"><div class="story-heading"><h2>Bathroom transformation</h2><p>The room beneath the sloped ceiling becomes a bathroom with a freestanding tub and glass shower.</p></div><div class="comparison-pair"><figure><figcaption>Before</figcaption><a class="photo-open" href="assets/img/hamid/bathroom-before.webp" data-caption="Bathroom transformation — Before" aria-label="Open bathroom transformation: before"><img src="assets/img/hamid/bathroom-before.webp" alt="Bathroom transformation, before the work" loading="lazy" decoding="async"></a></figure><figure><figcaption>After</figcaption><a class="photo-open" href="assets/img/hamid/bathroom-tub.webp" data-caption="Bathroom transformation — After" aria-label="Open bathroom transformation: after"><img src="assets/img/hamid/bathroom-tub.webp" alt="Bathroom transformation, after the work" loading="lazy" decoding="async"></a></figure></div><p class="story-hint">Open either photo to compare this project at full size.</p></article>
+<article class="project-story comparison" id="exterior" data-project="exterior"><div class="story-heading"><h2>Exterior renovation</h2><p>The same two-storey home, before and after its change from brick to stone cladding.</p></div><div class="comparison-pair"><figure><figcaption>Before</figcaption><a class="photo-open" href="assets/img/hamid/exterior-before.webp" data-caption="Exterior renovation — Before" aria-label="Open exterior renovation: before"><img src="assets/img/hamid/exterior-before.webp" alt="Exterior renovation, before the work" loading="lazy" decoding="async"></a></figure><figure><figcaption>After</figcaption><a class="photo-open" href="assets/img/hamid/stone-exterior.webp" data-caption="Exterior renovation — After" aria-label="Open exterior renovation: after"><img src="assets/img/hamid/stone-exterior.webp" alt="Exterior renovation, after the work" loading="lazy" decoding="async"></a></figure></div><p class="story-hint">Open either photo to compare this project at full size.</p></article>
+</div></section>
 <section class="cta-band sec">
 <div class="wrap">
 <p class="eyebrow">Have something in mind?</p>
@@ -295,9 +115,10 @@
 
 <a class="callbar" href="tel:+14169300400">Call 416-930-0400 · 24/7 Service</a>
 
-<script src="assets/js/main.js?v=14"></script>
+<script src="assets/js/main.js?v=15"></script>
 </body>
 </html>
+
 
 
 
