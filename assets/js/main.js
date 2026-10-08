@@ -14,31 +14,6 @@
     parallax();
   }
 
-  /* ---------- mobile nav ---------- */
-  var toggle = document.querySelector(".nav-toggle");
-  var nav = document.querySelector(".main-nav");
-  if (toggle && nav) {
-    toggle.addEventListener("click", function () {
-      var open = nav.classList.toggle("open");
-      toggle.classList.toggle("is-open", open);
-      toggle.setAttribute("aria-expanded", open ? "true" : "false");
-      document.body.style.overflow = open ? "hidden" : "";
-      document.body.classList.toggle("menu-open", open);
-    });
-    nav.addEventListener("click", function (e) {
-      if (e.target.tagName === "A") {
-        nav.classList.remove("open");
-        toggle.classList.remove("is-open");
-        toggle.setAttribute("aria-expanded", "false");
-        document.body.style.overflow = "";
-        document.body.classList.remove("menu-open");
-      }
-    });
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && nav.classList.contains("open")) toggle.click();
-    });
-  }
-
   /* ---------- scroll reveal ---------- */
   var revealEls = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && !reduceMotion) {
@@ -104,54 +79,6 @@
     );
     stats.forEach(function (el) { sio.observe(el); });
   }
-
-  /* ---------- projects gallery filter ---------- */
-  var filterBtns = document.querySelectorAll(".filters button");
-  var gItems = document.querySelectorAll(".g-item");
-  if (filterBtns.length && gItems.length) {
-    filterBtns.forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        filterBtns.forEach(function (b) {
-          b.classList.remove("on");
-          b.setAttribute("aria-pressed", "false");
-        });
-        btn.classList.add("on");
-        btn.setAttribute("aria-pressed", "true");
-        var f = btn.getAttribute("data-filter");
-        gItems.forEach(function (it) {
-          var show = f === "all" || it.getAttribute("data-cat") === f;
-          it.classList.toggle("hide", !show);
-        });
-      });
-    });
-  }
-
-  /* ---------- forms (local demo handler) ---------- */
-  var forms = document.querySelectorAll("form[data-demo-form]");
-  forms.forEach(function (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      /* honeypot spam check */
-      var hp = form.querySelector(".hp-field input");
-      if (hp && hp.value !== "") return;
-      if (!form.checkValidity()) { form.reportValidity(); return; }
-      var ok = form.parentElement.querySelector(".form-success") ||
-               form.querySelector(".form-success");
-      if (!ok) {
-        ok = document.createElement("div");
-        ok.className = "form-success";
-        ok.innerHTML =
-          '<div class="ok-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>' +
-          "<h3>Thank you — your request has been recorded.</h3>" +
-          "<p>Boussari Development will contact you using your preferred method, typically within one business day. For urgent commercial service, call <a href=\"tel:+14169300400\" class=\"gold\">416-930-0400</a> (24/7).</p>";
-        form.parentElement.appendChild(ok);
-      }
-      form.style.display = "none";
-      ok.classList.add("show");
-      ok.setAttribute("tabindex", "-1");
-      ok.focus();
-    });
-  });
 
   /* ---------- interactive value map (homepage) ---------- */
   var zoneEls = document.querySelectorAll("[data-zone]");
@@ -243,3 +170,165 @@
   window.addEventListener("resize", parallax, { passive: true });
   onScroll();
 })();
+
+/* Shared navigation, photo viewer and explicit email handoff. */
+(function () {
+  'use strict';
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.main-nav');
+  const serviceDetails = document.querySelector('.nav-services details');
+  function closeMenu(returnFocus) {
+    if (!toggle || !nav) return;
+    nav.classList.remove('open');
+    toggle.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Open menu');
+    document.body.style.overflow = '';
+    document.body.classList.remove('menu-open');
+    if (returnFocus) toggle.focus();
+  }
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      if (nav.classList.contains('open')) return closeMenu(true);
+      nav.classList.add('open');
+      toggle.classList.add('is-open');
+      toggle.setAttribute('aria-expanded', 'true');
+      toggle.setAttribute('aria-label', 'Close menu');
+      document.body.style.overflow = 'hidden';
+      document.body.classList.add('menu-open');
+      nav.querySelector('a').focus();
+    });
+    nav.addEventListener('click', e => { if (e.target.closest('a')) closeMenu(false); });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        if (nav.classList.contains('open')) closeMenu(true);
+        if (serviceDetails && serviceDetails.open) {
+          serviceDetails.open = false;
+          serviceDetails.querySelector('summary').focus();
+        }
+      }
+      if (e.key !== 'Tab' || !nav.classList.contains('open')) return;
+      const stops = [toggle, ...nav.querySelectorAll('a, summary')].filter(el => el.getClientRects().length);
+      const first = stops[0], last = stops[stops.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    });
+    window.addEventListener('resize', () => { if (window.innerWidth > 900) closeMenu(false); });
+  }
+  document.addEventListener('click', e => {
+    if (serviceDetails && !serviceDetails.contains(e.target)) serviceDetails.open = false;
+  });
+  if (serviceDetails) serviceDetails.addEventListener('focusout', () => {
+    setTimeout(() => { if (!serviceDetails.contains(document.activeElement)) serviceDetails.open = false; }, 0);
+  });
+
+  const buttons = [...document.querySelectorAll('[data-filter]')];
+  const items = [...document.querySelectorAll('.g-item[data-cat]')];
+  const count = document.querySelector('#gallery-count');
+  function filter(category, updateURL) {
+    buttons.forEach(btn => {
+      const selected = btn.dataset.filter === category;
+      btn.classList.toggle('on', selected);
+      btn.setAttribute('aria-pressed', String(selected));
+    });
+    items.forEach(item => { item.hidden = category !== 'all' && item.dataset.cat !== category; });
+    const visible = items.filter(item => !item.hidden).length;
+    if (count) count.textContent = `${visible} ${visible === 1 ? 'photo' : 'photos'}`;
+    if (updateURL) {
+      const url = new URL(window.location.href);
+      if (category === 'all') url.searchParams.delete('category');
+      else url.searchParams.set('category', category);
+      history.replaceState(null, '', url);
+    }
+  }
+  function restoreFilter() {
+    const requested = new URLSearchParams(location.search).get('category');
+    filter(buttons.some(b => b.dataset.filter === requested) ? requested : 'all', false);
+  }
+  if (buttons.length) {
+    buttons.forEach(btn => btn.addEventListener('click', () => filter(btn.dataset.filter, true)));
+    restoreFilter();
+    window.addEventListener('popstate', restoreFilter);
+  }
+
+  const dialog = document.querySelector('.photo-dialog');
+  if (dialog && typeof dialog.showModal === 'function') {
+    const image = dialog.querySelector('.photo-full');
+    const caption = dialog.querySelector('#photo-caption');
+    const position = dialog.querySelector('.photo-position');
+    const links = [...document.querySelectorAll('.photo-open')];
+    let active = [], index = 0, opener = null;
+    function show(step) {
+      index = (step + active.length) % active.length;
+      const link = active[index];
+      image.src = link.href;
+      image.alt = link.querySelector('img').alt;
+      caption.textContent = link.dataset.caption;
+      position.textContent = `${index + 1} / ${active.length}`;
+    }
+    links.forEach(link => link.addEventListener('click', e => {
+      e.preventDefault();
+      opener = link;
+      const isComparison = !!link.closest('.comparison-grid');
+      active = links.filter(a => !a.closest('[hidden]') && !!a.closest('.comparison-grid') === isComparison);
+      show(active.indexOf(link));
+      dialog.showModal();
+      document.body.style.overflow = 'hidden';
+      dialog.querySelector('.photo-close').focus();
+    }));
+    dialog.querySelector('.photo-close').addEventListener('click', () => dialog.close());
+    dialog.querySelector('.photo-prev').addEventListener('click', () => show(index - 1));
+    dialog.querySelector('.photo-next').addEventListener('click', () => show(index + 1));
+    dialog.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight') { e.preventDefault(); show(index + 1); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); show(index - 1); }
+    });
+    dialog.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
+    dialog.addEventListener('close', () => {
+      document.body.style.overflow = '';
+      image.removeAttribute('src');
+      if (opener) opener.focus();
+    });
+  }
+
+  document.querySelectorAll('form[data-email-form]').forEach((form, formIndex) => {
+    let review;
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const honeypot = form.querySelector('.hp-field input');
+      if (honeypot && honeypot.value) return;
+      if (!form.checkValidity()) return form.reportValidity();
+      const lines = ['Hello Boussari Development,', '', 'I would like to discuss a project.', ''];
+      form.querySelectorAll('input, select, textarea').forEach(field => {
+        if (!field.name || field.closest('.hp-field') || field.type === 'file' || !field.value) return;
+        const label = field.labels && field.labels[0] ? field.labels[0].textContent.replace(/\s*\*\s*/g, '').trim() : field.name;
+        lines.push(label + ': ' + field.value.trim());
+      });
+      const body = lines.join('\n');
+      if (!review) {
+        review = document.createElement('div');
+        review.className = 'email-review';
+        review.tabIndex = -1;
+        const id = 'email-message-' + formIndex;
+        review.innerHTML = '<h3>Review your request</h3><p>Your request has not been sent. Open the draft in your email app, attach any photos, then send it. If an email app does not open, copy the message and email <a href="mailto:info@boussaridevelopment.com">info@boussaridevelopment.com</a>.</p><label for="' + id + '">Your message</label><textarea id="' + id + '" readonly></textarea><div class="btn-row"><a class="btn btn-gold email-open">Open email draft</a><button type="button" class="btn btn-ghost email-copy">Copy message</button></div><p class="copy-status" role="status" aria-live="polite"></p>';
+        form.after(review);
+        review.querySelector('.email-copy').addEventListener('click', async () => {
+          const text = review.querySelector('textarea');
+          try {
+            await navigator.clipboard.writeText(text.value);
+            review.querySelector('.copy-status').textContent = 'Message copied. Paste it into your email.';
+          } catch (_) {
+            text.focus(); text.select();
+            review.querySelector('.copy-status').textContent = 'Message selected. Use your device’s copy command.';
+          }
+        });
+      }
+      review.querySelector('textarea').value = body;
+      review.querySelector('.copy-status').textContent = '';
+      review.querySelector('.email-open').href = 'mailto:info@boussaridevelopment.com?subject=' + encodeURIComponent('Project inquiry — Boussari Development') + '&body=' + encodeURIComponent(body);
+      review.focus();
+    });
+  });
+})();
+
+document.querySelectorAll("[data-email-submit]").forEach(button => { button.disabled = false; });
