@@ -269,8 +269,8 @@
     links.forEach(link => link.addEventListener('click', e => {
       e.preventDefault();
       opener = link;
-      const isComparison = !!link.closest('.comparison-grid');
-      active = links.filter(a => !a.closest('[hidden]') && !!a.closest('.comparison-grid') === isComparison);
+      const project = link.closest('[data-project]');
+      active = project ? [...project.querySelectorAll('.photo-open')] : links.filter(a => !a.closest('[hidden]'));
       show(active.indexOf(link));
       dialog.showModal();
       document.body.style.overflow = 'hidden';
