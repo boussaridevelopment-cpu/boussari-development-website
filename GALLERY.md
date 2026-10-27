@@ -1,6 +1,6 @@
 # Project gallery
 
-The gallery retains all 427 project photos. It opens with 23 visually reviewed room or exterior sequences, each showing two or three directly related stages. Extra angles are available beneath the corresponding space. Supplied comparison collages have their own expandable groups. Individual photographs without a confident match remain available under Additional project views.
+The gallery retains all 427 project photos. It opens with 23 visually reviewed room or exterior sequences, each showing two or three directly related stages. Extra angles are available beneath the corresponding space. Extra angles and supplied comparisons share one visitor-facing View more photos control, with separate viewer groups. Individual photographs without a confident match remain available under Additional project views.
 
 `assets/gallery.json` is the source of truth. Each `rooms` entry has an explicitly ordered `sequence`, optional `additional` images, and a matching-evidence note. `references` contains individual views; these must not be described as a chronological transformation. Do not infer a room match from the source archive alone. Missing before/during/after stages must not be invented.
 
