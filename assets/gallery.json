@@ -1,0 +1,335 @@
+{
+  "renovations": [
+    {
+      "id": "kitchen",
+      "title": "Galley kitchen",
+      "description": "A narrow kitchen renewed with cabinetry, counters and wood flooring.",
+      "photos": [
+        {
+          "file": "kitchen-before",
+          "label": "Before"
+        },
+        {
+          "file": "galley-kitchen",
+          "label": "After"
+        },
+        {
+          "file": "project-011",
+          "label": "After — view through the kitchen"
+        },
+        {
+          "file": "project-020",
+          "label": "After — opposite direction"
+        },
+        {
+          "file": "kitchen-storage",
+          "label": "After — cabinetry and storage"
+        }
+      ]
+    },
+    {
+      "id": "island-kitchen",
+      "title": "Kitchen and fireplace",
+      "description": "From the fitting-out stage to a finished kitchen with an island and fireplace wall.",
+      "photos": [
+        {
+          "file": "project-135",
+          "label": "During renovation"
+        },
+        {
+          "file": "project-093",
+          "label": "After"
+        },
+        {
+          "file": "kitchen-cabinetry",
+          "label": "After — island and lighting"
+        },
+        {
+          "file": "project-148",
+          "label": "After — kitchen layout"
+        },
+        {
+          "file": "project-131",
+          "label": "After — cabinetry and appliances"
+        },
+        {
+          "file": "project-132",
+          "label": "After — cooking area"
+        },
+        {
+          "file": "kitchen-island",
+          "label": "After — island and dining area"
+        },
+        {
+          "file": "fireplace-builtins",
+          "label": "After — fireplace and built-in shelving"
+        }
+      ]
+    },
+    {
+      "id": "glass-shower",
+      "title": "Glass shower and double vanity",
+      "description": "The same shower before its fixtures and glass were installed, then complete with twin rainfall showerheads and a double vanity.",
+      "photos": [
+        {
+          "file": "shower-preparation",
+          "label": "During renovation — shower waterproofing"
+        },
+        {
+          "file": "project-126",
+          "label": "During renovation"
+        },
+        {
+          "file": "project-137",
+          "label": "After"
+        },
+        {
+          "file": "bathroom-double-vanity",
+          "label": "After — double vanity and lighting"
+        }
+      ]
+    },
+    {
+      "id": "fireplace-living",
+      "title": "Fireplace living room",
+      "description": "The unfinished fireplace wall becomes the focal point of a finished living room, with a veined surround, crown moulding and wood flooring.",
+      "photos": [
+        {
+          "file": "project-088",
+          "label": "During renovation"
+        },
+        {
+          "file": "living-room",
+          "label": "After"
+        }
+      ]
+    },
+    {
+      "id": "bathroom",
+      "title": "Bathroom transformation",
+      "description": "The room beneath the sloped ceiling becomes a bathroom with a freestanding tub and glass shower.",
+      "photos": [
+        {
+          "file": "bathroom-before",
+          "label": "Before"
+        },
+        {
+          "file": "bathroom-tub",
+          "label": "After"
+        },
+        {
+          "file": "bathroom-shower",
+          "label": "After — shower and window"
+        },
+        {
+          "file": "project-055",
+          "label": "After — tiled shower detail"
+        }
+      ]
+    },
+    {
+      "id": "living-room",
+      "title": "Living and dining rooms",
+      "description": "The original fireplace and divided rooms become a connected living and dining space.",
+      "photos": [
+        {
+          "file": "project-008",
+          "label": "Before"
+        },
+        {
+          "file": "project-002",
+          "label": "After"
+        },
+        {
+          "file": "project-014",
+          "label": "After — front living area"
+        },
+        {
+          "file": "project-029",
+          "label": "After — dining area"
+        }
+      ]
+    },
+    {
+      "id": "main-floor",
+      "title": "Main floor and staircase",
+      "description": "A new staircase, glass railing and open layout change the same main floor.",
+      "photos": [
+        {
+          "file": "project-179",
+          "label": "Before"
+        },
+        {
+          "file": "open-plan-stair",
+          "label": "After"
+        },
+        {
+          "file": "project-143",
+          "label": "After — staircase detail"
+        },
+        {
+          "file": "project-130",
+          "label": "After — entrance and cabinetry"
+        }
+      ]
+    },
+    {
+      "id": "bedroom",
+      "title": "Front room refresh",
+      "description": "The same front room, with an updated window, flooring and finishes.",
+      "photos": [
+        {
+          "file": "project-009",
+          "label": "Before"
+        },
+        {
+          "file": "project-048",
+          "label": "After"
+        }
+      ]
+    },
+    {
+      "id": "hallway",
+      "title": "Hallway and landing",
+      "description": "The framed hallway becomes a finished landing with doors, flooring and a glass railing.",
+      "photos": [
+        {
+          "file": "project-084",
+          "label": "During renovation"
+        },
+        {
+          "file": "project-094",
+          "label": "After"
+        },
+        {
+          "file": "hallway-doors",
+          "label": "After — doors and landing"
+        }
+      ]
+    },
+    {
+      "id": "front-exterior",
+      "title": "Front exterior",
+      "description": "The same frontage during construction and after the entrance and exterior finishes are completed.",
+      "photos": [
+        {
+          "file": "project-097",
+          "label": "During renovation"
+        },
+        {
+          "file": "exterior-front",
+          "label": "After"
+        },
+        {
+          "file": "project-196",
+          "label": "After — entrance from the side"
+        }
+      ]
+    },
+    {
+      "id": "rear-addition",
+      "title": "Rear addition",
+      "description": "The open structure and excavation are shown beside the completed rear elevation and yard.",
+      "photos": [
+        {
+          "file": "project-134",
+          "label": "During renovation"
+        },
+        {
+          "file": "exterior-rear",
+          "label": "After"
+        }
+      ]
+    },
+    {
+      "id": "exterior",
+      "title": "Stone exterior",
+      "description": "The same two-storey home, before and after its change from brick to stone cladding.",
+      "photos": [
+        {
+          "file": "exterior-before",
+          "label": "Before"
+        },
+        {
+          "file": "stone-exterior",
+          "label": "After"
+        },
+        {
+          "file": "project-244",
+          "label": "After — stonework and bay window"
+        },
+        {
+          "file": "stonework-detail",
+          "label": "After — stone cladding detail"
+        }
+      ]
+    }
+  ],
+  "additionalPhotos": [
+    {
+      "file": "basement-preparation",
+      "title": "Basement floor preparation",
+      "stage": "During renovation"
+    },
+    {
+      "file": "basement-before",
+      "title": "Basement framing",
+      "stage": "During renovation"
+    },
+    {
+      "file": "addition-framing",
+      "title": "Addition framing",
+      "stage": "During renovation"
+    },
+    {
+      "file": "interior-framing",
+      "title": "Interior framing",
+      "stage": "During renovation"
+    },
+    {
+      "file": "framing-in-progress",
+      "title": "Structural work",
+      "stage": "During renovation"
+    },
+    {
+      "file": "bathroom-framing",
+      "title": "Bathroom framing",
+      "stage": "During renovation"
+    },
+    {
+      "file": "deck-in-progress",
+      "title": "Deck construction",
+      "stage": "During renovation"
+    },
+    {
+      "file": "basement-hall",
+      "title": "Basement hallway",
+      "stage": "Finished view"
+    },
+    {
+      "file": "basement-living",
+      "title": "Basement living area",
+      "stage": "Finished view"
+    },
+    {
+      "file": "bathroom-glass",
+      "title": "Glass shower bathroom",
+      "stage": "Finished view"
+    },
+    {
+      "file": "paint-trim",
+      "title": "Interior paint and trim",
+      "stage": "Finished view"
+    },
+    {
+      "file": "trim-detail",
+      "title": "Crown moulding detail",
+      "stage": "Finished view"
+    },
+    {
+      "file": "side-exterior",
+      "title": "Side exterior",
+      "stage": "Finished view"
+    }
+  ]
+}
