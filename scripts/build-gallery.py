@@ -1,4 +1,4 @@
-"""Build complete, visually reviewed renovation stories as static HTML."""
+"""Build full, visually reviewed project albums in renovation-stage order."""
 from pathlib import Path
 import html
 import json
@@ -64,25 +64,28 @@ def build():
     album_links, albums, nav = [], [], []
     for title, rooms in projects.items():
         album_id = 'album-' + re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
-        cover = rooms[0]['sequence'][-1]
+        cover = next((p for p in rooms[0]['sequence'] if p['file'] == rooms[0].get('cover')), rooms[0]['sequence'][-1])
+        if cover['stage'] != 'after':
+            raise ValueError('Project covers must show completed work.')
         album_links.append(
             f'<a class="album-card" href="#{album_id}"><img '
             f'src="assets/img/hamid/{esc(cover["file"])}-thumb.webp" alt="" '
             f'loading="lazy" decoding="async" width="{cover["width"]}" height="{cover["height"]}">'
             f'<span class="album-card-text"><strong>{esc(title)}</strong>'
-            '<span>View renovation &rarr;</span></span></a>'
+            f'<span>{sum(len(r["sequence"]) for r in rooms)} photos &middot; View full project &rarr;</span></span></a>'
         )
         nav.append(f'<a href="#{album_id}">{esc(title)}</a>')
         stories = []
         for room in rooms:
             aliases = ''.join(f'<span class="anchor-alias" id="{alias}" aria-hidden="true"></span>' for alias in room.get('aliases', []))
             columns = []
-            for stage in STAGES:
+            for stage_number, stage in enumerate(STAGES, 1):
                 photos = ''.join(card(p, room['title']) for p in room['sequence'] if p['stage'] == stage)
-                columns.append(f'<div class="story-stage"><h4>{stage.title()}</h4>{photos}</div>')
+                columns.append(f'<section class="story-stage" id="{room["id"]}-{stage}" aria-labelledby="{room["id"]}-{stage}-title"><h3 id="{room["id"]}-{stage}-title"><span>{stage_number:02}</span> {stage.title()}</h3><div class="stage-photos">{photos}</div></section>')
+            stage_nav = ''.join(f'<a href="#{room["id"]}-{stage}">{stage.title()}</a>' for stage in STAGES)
             stories.append(
                 f'<article class="project-story" id="{room["id"]}">{aliases}'
-                f'<header class="story-heading"><h3>{esc(room["title"])}</h3></header>'
+                f'<nav class="stage-nav" aria-label="{esc(title)} stages">{stage_nav}</nav>'
                 f'<div class="story-timeline" data-project="{room["id"]}">{"".join(columns)}</div></article>'
             )
         albums.append(
@@ -109,12 +112,13 @@ def build():
         '<nav class="story-nav" aria-label="Project transformations">' + ''.join(nav) + '</nav>', page, count=1, flags=re.S)
     if 'assets/css/gallery.css' not in page:
         page = page.replace('</head>', '<link rel="stylesheet" href="assets/css/gallery.css?v=1">\n</head>')
+    page = page.replace('gallery.css?v=1', 'gallery.css?v=2')
     page = page.replace('style.css?v=14', 'style.css?v=15').replace('main.js?v=16', 'main.js?v=17')
     page = page.replace('Hamid M. Boussari, Salesperson', 'Hamid Mohammadi-Boussari, Salesperson')
     page = page.replace('Call 416-930-0400 · 24/7 Service', 'Call 416-930-0400 · 24/7 Commercial')
     page = page.replace('Call 416-930-0400 · 24/7 Commercial Service', 'Call 416-930-0400 · 24/7 Commercial')
     path.write_text(page, encoding='utf8', newline='\n')
-    print(f'Built {len(projects)} project albums, {len(data["rooms"])} complete sequences, '
+    print(f'Built {len(projects)} complete project albums, '
           f'{sum(len(r["sequence"]) for r in data["rooms"])} photographs')
 
 

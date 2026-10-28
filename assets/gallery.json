@@ -1,434 +1,2445 @@
 {
-  "version": 3,
+  "version": 4,
+  "scope": "complete-project-albums",
   "rooms": [
     {
-      "id": "kitchen",
+      "id": "townhouse",
       "project": "Townhouse renovation",
-      "title": "Living, dining & kitchen",
+      "title": "Townhouse renovation",
       "aliases": [
-        "living-room"
-      ],
-      "evidence": "Combined main-floor living, dining and kitchen scope. Supplied collages3/4/6/8 connect original/final rooms;13 explicitly connects52 to35.52 has exposed ceiling joists;48 has new ceiling board around identical right stair and framed cubicle.",
-      "sequence": [
-        {
-          "file": "project-008",
-          "stage": "before",
-          "label": "Original living and dining rooms",
-          "width": 720,
-          "height": 540,
-          "source_id": 72
-        },
-        {
-          "file": "kitchen-before",
-          "stage": "before",
-          "label": "Original kitchen",
-          "width": 760,
-          "height": 570,
-          "source_id": 70
-        },
-        {
-          "file": "interior-framing",
-          "stage": "during",
-          "label": "Main-floor walls and ceiling opened up",
-          "width": 570,
-          "height": 760,
-          "source_id": 52
-        },
-        {
-          "file": "archive-photo-048",
-          "stage": "during",
-          "label": "New partitions and ceiling taking shape",
-          "width": 600,
-          "height": 450,
-          "source_id": 48
-        },
-        {
-          "file": "project-002",
-          "stage": "after",
-          "label": "Finished living and dining rooms",
-          "width": 720,
-          "height": 540,
-          "source_id": 24
-        },
-        {
-          "file": "archive-photo-035",
-          "stage": "after",
-          "label": "Finished main floor and staircase",
-          "width": 600,
-          "height": 450,
-          "source_id": 35
-        },
-        {
-          "file": "galley-kitchen",
-          "stage": "after",
-          "label": "Finished galley kitchen",
-          "width": 760,
-          "height": 570,
-          "source_id": 38
-        }
-      ]
-    },
-    {
-      "id": "bathroom",
-      "project": "Townhouse renovation",
-      "title": "Bathroom beneath the sloped ceiling",
-      "aliases": [],
-      "evidence": "Supplied collages11/12, same sloped ceiling and rear-neighbour outlook.",
-      "sequence": [
-        {
-          "file": "bathroom-before",
-          "stage": "before",
-          "label": "Original room beneath the sloped ceiling",
-          "width": 760,
-          "height": 570,
-          "source_id": 67
-        },
-        {
-          "file": "archive-photo-051",
-          "stage": "during",
-          "label": "Exposed roof and wall framing",
-          "width": 450,
-          "height": 600,
-          "source_id": 51
-        },
-        {
-          "file": "bathroom-tub",
-          "stage": "after",
-          "label": "Finished bathroom with freestanding tub",
-          "width": 760,
-          "height": 570,
-          "source_id": 28
-        }
-      ]
-    },
-    {
-      "id": "bedroom",
-      "project": "Townhouse renovation",
-      "title": "Front room",
-      "aliases": [],
-      "evidence": "Same faceted original bay in68/56; supplied collage10 explicitly pairs68/15.",
-      "sequence": [
-        {
-          "file": "project-009",
-          "stage": "before",
-          "label": "Original front room and bay window",
-          "width": 720,
-          "height": 540,
-          "source_id": 68
-        },
-        {
-          "file": "archive-photo-056",
-          "stage": "during",
-          "label": "Window opening and walls during construction",
-          "width": 600,
-          "height": 450,
-          "source_id": 56
-        },
-        {
-          "file": "project-048",
-          "stage": "after",
-          "label": "Finished front room",
-          "width": 540,
-          "height": 720,
-          "source_id": 15
-        }
-      ]
-    },
-    {
-      "id": "townhouse-front",
-      "project": "Townhouse renovation",
-      "title": "Front exterior",
-      "aliases": [
+        "kitchen",
+        "living-room",
+        "bathroom",
+        "bedroom",
+        "townhouse-front",
         "exterior"
       ],
-      "evidence": "Same adjoining houses, dormer and front extension footprint; completed final stairs and landscaped facade.",
+      "cover": "galley-kitchen",
+      "evidence": "Front adjoining houses and dormer connect original, reconstruction and completed facade. Supplied collages3–13 match original main-floor rooms, front bay room, roof bathroom and framing to completed views. Continuous galley kitchen/main-floor views, stair railings, rear deck opening, side elevation and basement room/stair geometry link the extended set. Rear envelope photos45/46 and deck47 remain During because work is visibly unfinished.",
       "sequence": [
         {
           "file": "archive-photo-073",
+          "source_id": 73,
           "stage": "before",
-          "label": "Original front exterior",
+          "label": "Front exterior before renovation",
           "width": 450,
-          "height": 600,
-          "source_id": 73
+          "height": 600
+        },
+        {
+          "file": "archive-photo-063",
+          "source_id": 63,
+          "stage": "before",
+          "label": "Original rear elevation",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-074",
+          "source_id": 74,
+          "stage": "before",
+          "label": "Original rear windows and cladding",
+          "width": 274,
+          "height": 182
+        },
+        {
+          "file": "archive-photo-062",
+          "source_id": 62,
+          "stage": "before",
+          "label": "Original brick side wall",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "project-008",
+          "source_id": 72,
+          "stage": "before",
+          "label": "Original living and dining rooms",
+          "width": 720,
+          "height": 540
+        },
+        {
+          "file": "archive-photo-077",
+          "source_id": 77,
+          "stage": "before",
+          "label": "Original front room and fireplace",
+          "width": 274,
+          "height": 182
+        },
+        {
+          "file": "archive-photo-069",
+          "source_id": 69,
+          "stage": "before",
+          "label": "Original kitchen and doorway",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "kitchen-before",
+          "source_id": 70,
+          "stage": "before",
+          "label": "Original kitchen cabinets",
+          "width": 760,
+          "height": 570
+        },
+        {
+          "file": "archive-photo-071",
+          "source_id": 71,
+          "stage": "before",
+          "label": "Original kitchen sink and rear window",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-076",
+          "source_id": 76,
+          "stage": "before",
+          "label": "Original kitchen floor and wall finishes",
+          "width": 274,
+          "height": 182
+        },
+        {
+          "file": "project-009",
+          "source_id": 68,
+          "stage": "before",
+          "label": "Original front room and bay window",
+          "width": 720,
+          "height": 540
+        },
+        {
+          "file": "bathroom-before",
+          "source_id": 67,
+          "stage": "before",
+          "label": "Original room beneath the sloped ceiling",
+          "width": 760,
+          "height": 570
+        },
+        {
+          "file": "archive-photo-065",
+          "source_id": 65,
+          "stage": "before",
+          "label": "Original basement partitions and stairs",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-064",
+          "source_id": 64,
+          "stage": "before",
+          "label": "Basement before excavation",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-066",
+          "source_id": 66,
+          "stage": "before",
+          "label": "Original basement laundry area",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-061",
+          "source_id": 61,
+          "stage": "during",
+          "label": "Front of the house during demolition",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-060",
+          "source_id": 60,
+          "stage": "during",
+          "label": "Roof space opened up during demolition",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-058",
+          "source_id": 58,
+          "stage": "during",
+          "label": "Upper rear wall opened up for renovation",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-059",
+          "source_id": 59,
+          "stage": "during",
+          "label": "Basement floor excavation",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-056",
+          "source_id": 56,
+          "stage": "during",
+          "label": "Front room with exposed floor joists and bay window",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "interior-framing",
+          "source_id": 52,
+          "stage": "during",
+          "label": "Main floor with exposed ceiling and wall framing",
+          "width": 570,
+          "height": 760
+        },
+        {
+          "file": "archive-photo-051",
+          "source_id": 51,
+          "stage": "during",
+          "label": "Roof and wall framing in the future bathroom",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-054",
+          "source_id": 54,
+          "stage": "during",
+          "label": "New interior partitions being framed",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-049",
+          "source_id": 49,
+          "stage": "during",
+          "label": "Bathtub and plumbing rough-in",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "framing-in-progress",
+          "source_id": 57,
+          "stage": "during",
+          "label": "New framing around the rear opening",
+          "width": 760,
+          "height": 570
+        },
+        {
+          "file": "archive-photo-050",
+          "source_id": 50,
+          "stage": "during",
+          "label": "Rear room framing beside the stair opening",
+          "width": 600,
+          "height": 450
         },
         {
           "file": "archive-photo-053",
+          "source_id": 53,
           "stage": "during",
-          "label": "Facade during renovation",
+          "label": "Front facade and window openings during construction",
           "width": 450,
-          "height": 600,
-          "source_id": 53
+          "height": 600
+        },
+        {
+          "file": "archive-photo-048",
+          "source_id": 48,
+          "stage": "during",
+          "label": "Main-floor ceiling board and partitions",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "deck-in-progress",
+          "source_id": 47,
+          "stage": "during",
+          "label": "Rear deck boards and roof-level work in progress",
+          "width": 570,
+          "height": 760
+        },
+        {
+          "file": "side-exterior",
+          "source_id": 45,
+          "stage": "during",
+          "label": "Side-wall cladding and window installation",
+          "width": 570,
+          "height": 760
+        },
+        {
+          "file": "archive-photo-046",
+          "source_id": 46,
+          "stage": "during",
+          "label": "Rear cladding and windows with finishing work underway",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-042",
+          "source_id": 42,
+          "stage": "during",
+          "label": "Front yard and entry work in progress",
+          "width": 450,
+          "height": 600
         },
         {
           "file": "archive-photo-030",
+          "source_id": 30,
           "stage": "after",
-          "label": "Finished facade, entrance and steps",
+          "label": "Finished front facade, entrance and landscaping",
           "width": 355,
-          "height": 600,
-          "source_id": 30
-        }
-      ]
-    },
-    {
-      "id": "main-floor",
-      "project": "Open-plan home",
-      "title": "Main floor & staircase",
-      "aliases": [],
-      "evidence": "Supplied collages113/114/116/166 anchor all phases.170 has bare subfloor and drywall;150 has new timber flooring, same staircase;132 complete.",
-      "sequence": [
-        {
-          "file": "project-179",
-          "stage": "before",
-          "label": "Original main floor and enclosed staircase",
-          "width": 720,
-          "height": 540,
-          "source_id": 223
+          "height": 600
         },
         {
-          "file": "archive-photo-170",
-          "stage": "during",
-          "label": "New staircase and drywall over the subfloor",
-          "width": 600,
-          "height": 338,
-          "source_id": 170
-        },
-        {
-          "file": "archive-photo-150",
-          "stage": "during",
-          "label": "Flooring installed; finishing work underway",
-          "width": 600,
-          "height": 450,
-          "source_id": 150
-        },
-        {
-          "file": "open-plan-stair",
+          "file": "archive-photo-026",
+          "source_id": 26,
           "stage": "after",
-          "label": "Finished open-plan main floor",
+          "label": "Completed front entrance at night",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-031",
+          "source_id": 31,
+          "stage": "after",
+          "label": "Finished living room and front entrance",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "project-014",
+          "source_id": 32,
+          "stage": "after",
+          "label": "Finished front seating area",
+          "width": 720,
+          "height": 540
+        },
+        {
+          "file": "archive-photo-001",
+          "source_id": 1,
+          "stage": "after",
+          "label": "Finished fireplace and built-in shelves",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "project-002",
+          "source_id": 24,
+          "stage": "after",
+          "label": "Finished living and dining rooms",
+          "width": 720,
+          "height": 540
+        },
+        {
+          "file": "archive-photo-033",
+          "source_id": 33,
+          "stage": "after",
+          "label": "Finished fireplace and dining room",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "project-029",
+          "source_id": 25,
+          "stage": "after",
+          "label": "Finished dining room looking toward the kitchen",
+          "width": 720,
+          "height": 540
+        },
+        {
+          "file": "archive-photo-034",
+          "source_id": 34,
+          "stage": "after",
+          "label": "Completed main floor and open staircase",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-035",
+          "source_id": 35,
+          "stage": "after",
+          "label": "Completed dining room and staircase",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "project-011",
+          "source_id": 36,
+          "stage": "after",
+          "label": "Finished galley kitchen looking toward the living room",
+          "width": 720,
+          "height": 540
+        },
+        {
+          "file": "archive-photo-037",
+          "source_id": 37,
+          "stage": "after",
+          "label": "Finished kitchen seating by the rear window",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "galley-kitchen",
+          "source_id": 38,
+          "stage": "after",
+          "label": "Finished galley kitchen and cabinets",
           "width": 760,
-          "height": 570,
-          "source_id": 132
+          "height": 570
+        },
+        {
+          "file": "project-020",
+          "source_id": 39,
+          "stage": "after",
+          "label": "Finished kitchen looking toward the garden",
+          "width": 720,
+          "height": 540
+        },
+        {
+          "file": "kitchen-storage",
+          "source_id": 40,
+          "stage": "after",
+          "label": "Completed kitchen cabinets and worktop",
+          "width": 760,
+          "height": 570
+        },
+        {
+          "file": "archive-photo-041",
+          "source_id": 41,
+          "stage": "after",
+          "label": "Finished kitchen and rear seating area",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "project-048",
+          "source_id": 15,
+          "stage": "after",
+          "label": "Finished front room and enlarged window",
+          "width": 540,
+          "height": 720
+        },
+        {
+          "file": "archive-photo-014",
+          "source_id": 14,
+          "stage": "after",
+          "label": "Finished bedroom opening onto the deck",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-027",
+          "source_id": 27,
+          "stage": "after",
+          "label": "Completed bedroom and deck doors",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-002",
+          "source_id": 2,
+          "stage": "after",
+          "label": "Completed staircase and landing",
+          "width": 600,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-009",
+          "source_id": 9,
+          "stage": "after",
+          "label": "Finished upper hallway",
+          "width": 600,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-018",
+          "source_id": 18,
+          "stage": "after",
+          "label": "Completed hallway and stair railing",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "project-055",
+          "source_id": 16,
+          "stage": "after",
+          "label": "Finished bathtub and stone-look wall",
+          "width": 540,
+          "height": 720
+        },
+        {
+          "file": "archive-photo-017",
+          "source_id": 17,
+          "stage": "after",
+          "label": "Finished bathtub wall and shower fixtures",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "bathroom-shower",
+          "source_id": 23,
+          "stage": "after",
+          "label": "Completed bathtub and toilet",
+          "width": 760,
+          "height": 507
+        },
+        {
+          "file": "archive-photo-043",
+          "source_id": 43,
+          "stage": "after",
+          "label": "Finished glass shower enclosure",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "bathroom-tub",
+          "source_id": 28,
+          "stage": "after",
+          "label": "Finished bathroom beneath the sloped ceiling",
+          "width": 760,
+          "height": 570
+        },
+        {
+          "file": "archive-photo-029",
+          "source_id": 29,
+          "stage": "after",
+          "label": "Completed freestanding tub and double vanity",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-019",
+          "source_id": 19,
+          "stage": "after",
+          "label": "Finished basement stair and play area",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-020",
+          "source_id": 20,
+          "stage": "after",
+          "label": "Completed basement exit stairs",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "basement-hall",
+          "source_id": 21,
+          "stage": "after",
+          "label": "Finished basement hallway",
+          "width": 570,
+          "height": 760
+        },
+        {
+          "file": "archive-photo-022",
+          "source_id": 22,
+          "stage": "after",
+          "label": "Completed basement living area",
+          "width": 450,
+          "height": 600
         }
       ]
     },
     {
-      "id": "rear-addition",
+      "id": "open-plan",
       "project": "Open-plan home",
-      "title": "Rear addition",
-      "aliases": [],
-      "evidence": "Same pink gabled left neighbour and original rear stub/hip roof.215 X shoring;205 new foundation walls and floor framing;106 complete rear addition.",
+      "title": "Open-plan home",
+      "aliases": [
+        "main-floor",
+        "rear-addition"
+      ],
+      "cover": "project-093",
+      "evidence": "House number586, original hip roof, brick entry and large street tree explicitly connect original facade in95/162, site work213 and rebuilt facade. Same neighbouring house at right throughout.95 uniquely preserves intact original facade;162 preserves a distinct construction view not present in163/164. Original rear220, brick demolition219/218, X shoring215/200, excavations/foundations and finished106/84 share the distinctive pink gabled left neighbour, side access, original rear hip roof, fence and trees. The new addition shell and its large rear openings visibly connect the framing views. 216 shows basement excavation under existing masonry/joists;196/197 show the same stripped masonry shell with underfloor heating.178–180/190 show low basement ceiling, new partitions and concrete floor.98 uniquely supplies the completed basement and its stairwell exit alongside matching framing; retain the supplied collage intact. 223 and222 preserve the original main floor. Supplied comparisons113/114/116/166 explicitly link223,171/160 and132. Retained stair position, front entry/window, rear raised floor and original/new masonry openings connect the demolition, rough-in, drywall, floor installation and glass-balustrade views.182 main-floor front joists look toward the same front street tree and original entry. 222 is the existing kitchen beside the original stair.99 explicitly links156 to the completed kitchen100. Raised rear step, rear glass door, cabinet layout, two small high windows, distinctive ornate stone fireplace slab and shelving connect rough-in, cabinet installation and every finished kitchen angle.120/121 match kitchen cabinet crown moulding; exact photographed corner cannot independently establish the house, so these detail photos are flagged below. 155 firebox rough opening and152 installed diagonally veined slab exactly match131 and staged82/96. Same tall front window beside the projecting fireplace, ceiling speaker/light pattern and side passage.177 is horizontal fireplace framing, not bathroom framing; its exact final firebox position is less independently identifiable, so caption remains general. 181 and the construction portions of97/115 show the same stair opening, landing doors and upper-floor window. Finished133/137 match the comparison panels.185 shows the large street tree through the opened front upper-floor wall;186/187 show the adjoining original shell and stair opening.192 is an isolated masonry/lintel detail within this construction series; no exact final room is asserted. 159 paired sets of plumbing penetrations and niche preparation match153/154 stone slab, herringbone ceiling/floor and134 completed glass shower.85 shows same shower next to double vanity;109 is the same vanity/mirrors and round wall vent. 135 and136 are the same bathroom: identical tub/shower screen, white stone veining, rain head, gray vanity and toilet. Finish details and source-series continuity associate it with the modern house, but no wider fixed landmark independently links this secondary bathroom; flagged as moderate association below.",
       "sequence": [
         {
           "file": "archive-photo-220",
+          "source_id": 220,
           "stage": "before",
-          "label": "Original rear of the house",
+          "label": "Before — original rear elevation and extension",
           "width": 450,
-          "height": 600,
-          "source_id": 220
+          "height": 600
+        },
+        {
+          "file": "project-179",
+          "source_id": 223,
+          "stage": "before",
+          "label": "Before — original staircase and divided main floor",
+          "width": 720,
+          "height": 540
+        },
+        {
+          "file": "archive-photo-222",
+          "source_id": 222,
+          "stage": "before",
+          "label": "Before — existing kitchen beside the original staircase",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-213",
+          "source_id": 213,
+          "stage": "during",
+          "label": "Front exterior — original facade during site preparation",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-183",
+          "source_id": 183,
+          "stage": "during",
+          "label": "Front exterior — masonry openings exposed during demolition",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-184",
+          "source_id": 184,
+          "stage": "during",
+          "label": "Front exterior — original porch and facade opened up",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-191",
+          "source_id": 191,
+          "stage": "during",
+          "label": "Front exterior — porch demolition and structural work",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-219",
+          "source_id": 219,
+          "stage": "during",
+          "label": "Rear addition — dismantling the original rear wall",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-218",
+          "source_id": 218,
+          "stage": "during",
+          "label": "Rear addition — rear wall demolition and temporary support",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-217",
+          "source_id": 217,
+          "stage": "during",
+          "label": "Rear addition — temporary bracing at the opened rear wall",
+          "width": 450,
+          "height": 600
         },
         {
           "file": "project-134",
+          "source_id": 215,
           "stage": "during",
-          "label": "Rear demolition and temporary support",
+          "label": "Rear addition — original structure supported with timber bracing",
           "width": 540,
-          "height": 720,
-          "source_id": 215
+          "height": 720
+        },
+        {
+          "file": "archive-photo-221",
+          "source_id": 221,
+          "stage": "during",
+          "label": "Interior — original wall linings stripped around the stairwell",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-212",
+          "source_id": 212,
+          "stage": "during",
+          "label": "Rear addition — excavation beside the supported structure",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-214",
+          "source_id": 214,
+          "stage": "during",
+          "label": "Rear addition — excavation below the original rear wall",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-211",
+          "source_id": 211,
+          "stage": "during",
+          "label": "Rear addition — excavating the addition footprint",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-210",
+          "source_id": 210,
+          "stage": "during",
+          "label": "Rear addition — excavation toward the garden",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-216",
+          "source_id": 216,
+          "stage": "during",
+          "label": "Basement — excavation below the existing floor",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-208",
+          "source_id": 208,
+          "stage": "during",
+          "label": "Rear addition — foundation formwork within the excavation",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-209",
+          "source_id": 209,
+          "stage": "during",
+          "label": "Rear addition — setting foundation forms",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-207",
+          "source_id": 207,
+          "stage": "during",
+          "label": "Rear addition — formed footing layout",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-206",
+          "source_id": 206,
+          "stage": "during",
+          "label": "Rear addition — new block foundation walls",
+          "width": 450,
+          "height": 600
         },
         {
           "file": "archive-photo-205",
+          "source_id": 205,
           "stage": "during",
-          "label": "New foundation walls and floor framing",
+          "label": "Rear addition — foundation walls and first floor framing",
           "width": 450,
-          "height": 600,
-          "source_id": 205
+          "height": 600
+        },
+        {
+          "file": "archive-photo-165",
+          "source_id": 165,
+          "stage": "during",
+          "label": "Front exterior — rebuilding around the original entrance",
+          "width": 338,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-163",
+          "source_id": 163,
+          "stage": "during",
+          "label": "Front exterior — new entrance canopy framing",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "project-097",
+          "source_id": 164,
+          "stage": "during",
+          "label": "Front exterior — framed bay and entrance from the driveway",
+          "width": 540,
+          "height": 720
+        },
+        {
+          "file": "archive-photo-162",
+          "source_id": 162,
+          "stage": "during",
+          "label": "Front exterior transformation — original facade and construction",
+          "width": 600,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-204",
+          "source_id": 204,
+          "stage": "during",
+          "label": "Rear addition — floor framing beside the original house",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-200",
+          "source_id": 200,
+          "stage": "during",
+          "label": "Rear addition — new floor deck at the supported opening",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-198",
+          "source_id": 198,
+          "stage": "during",
+          "label": "Rear addition — new floor joists viewed from above",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-199",
+          "source_id": 199,
+          "stage": "during",
+          "label": "Rear addition — wall framing and temporary bracing",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-201",
+          "source_id": 201,
+          "stage": "during",
+          "label": "Rear addition — framing where the extension joins the house",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-202",
+          "source_id": 202,
+          "stage": "during",
+          "label": "Rear addition — new rear wall and door openings",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-203",
+          "source_id": 203,
+          "stage": "during",
+          "label": "Rear addition — interior framing toward the garden",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-188",
+          "source_id": 188,
+          "stage": "during",
+          "label": "Rear addition — large rear window framing",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "addition-framing",
+          "source_id": 189,
+          "stage": "during",
+          "label": "Rear addition — structural framing and window openings",
+          "width": 760,
+          "height": 570
+        },
+        {
+          "file": "archive-photo-190",
+          "source_id": 190,
+          "stage": "during",
+          "label": "Basement — new partition framing and services",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-178",
+          "source_id": 178,
+          "stage": "during",
+          "label": "Basement — framed rooms and stair area",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "basement-before",
+          "source_id": 179,
+          "stage": "during",
+          "label": "Basement — partitions along the new concrete floor",
+          "width": 760,
+          "height": 570
+        },
+        {
+          "file": "archive-photo-180",
+          "source_id": 180,
+          "stage": "during",
+          "label": "Basement — wall framing beside the staircase",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-182",
+          "source_id": 182,
+          "stage": "during",
+          "label": "Main floor — replacing floor joists at the front of the house",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-185",
+          "source_id": 185,
+          "stage": "during",
+          "label": "Upper floor — opened front wall and roof structure",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-186",
+          "source_id": 186,
+          "stage": "during",
+          "label": "Upper floor — new partitions within the original masonry shell",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-187",
+          "source_id": 187,
+          "stage": "during",
+          "label": "Upper floor — framing beside the stair opening",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-192",
+          "source_id": 192,
+          "stage": "during",
+          "label": "Structural work — masonry opening and new lintel",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-151",
+          "source_id": 151,
+          "stage": "during",
+          "label": "Front exterior — wall finish and entrance under construction",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-196",
+          "source_id": 196,
+          "stage": "during",
+          "label": "Basement — underfloor heating before the floor is poured",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "basement-preparation",
+          "source_id": 197,
+          "stage": "during",
+          "label": "Basement — underfloor heating across the basement floor",
+          "width": 760,
+          "height": 570
+        },
+        {
+          "file": "archive-photo-175",
+          "source_id": 175,
+          "stage": "during",
+          "label": "Interior — insulation, wiring and boards ready for drywall",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-174",
+          "source_id": 174,
+          "stage": "during",
+          "label": "Interior — insulated wall and ceiling services before drywall",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "bathroom-framing",
+          "source_id": 177,
+          "stage": "during",
+          "label": "Interior — fireplace framing and electrical rough-ins",
+          "width": 570,
+          "height": 760
+        },
+        {
+          "file": "project-084",
+          "source_id": 181,
+          "stage": "during",
+          "label": "Upper landing — wall framing, plumbing and stair opening",
+          "width": 720,
+          "height": 249
+        },
+        {
+          "file": "shower-preparation",
+          "source_id": 159,
+          "stage": "during",
+          "label": "Shower — waterproof wall preparation and plumbing rough-ins",
+          "width": 570,
+          "height": 760
+        },
+        {
+          "file": "archive-photo-167",
+          "source_id": 167,
+          "stage": "during",
+          "label": "Interior — drywall boarding and taped joints",
+          "width": 337,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-173",
+          "source_id": 173,
+          "stage": "during",
+          "label": "Interior — newly boarded walls and a floor transition",
+          "width": 337,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-170",
+          "source_id": 170,
+          "stage": "during",
+          "label": "Main floor — drywall around the entrance and staircase",
+          "width": 600,
+          "height": 338
+        },
+        {
+          "file": "archive-photo-171",
+          "source_id": 171,
+          "stage": "during",
+          "label": "Main floor — staircase and rear opening during drywall work",
+          "width": 600,
+          "height": 338
+        },
+        {
+          "file": "archive-photo-172",
+          "source_id": 172,
+          "stage": "during",
+          "label": "Staircase — timber stair installation from the lower flight",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-161",
+          "source_id": 161,
+          "stage": "during",
+          "label": "Main floor — newly boarded walls around the open staircase",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-160",
+          "source_id": 160,
+          "stage": "during",
+          "label": "Main floor — staircase construction before flooring",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "project-135",
+          "source_id": 156,
+          "stage": "during",
+          "label": "Kitchen — plumbing and wall preparation before cabinetry",
+          "width": 540,
+          "height": 720
+        },
+        {
+          "file": "archive-photo-168",
+          "source_id": 168,
+          "stage": "during",
+          "label": "Kitchen — service rough-ins beside the rear opening",
+          "width": 600,
+          "height": 338
+        },
+        {
+          "file": "archive-photo-169",
+          "source_id": 169,
+          "stage": "during",
+          "label": "Kitchen — rear doors and unfinished floor area",
+          "width": 600,
+          "height": 338
+        },
+        {
+          "file": "project-088",
+          "source_id": 155,
+          "stage": "during",
+          "label": "Living room — firebox opening and wall preparation",
+          "width": 540,
+          "height": 720
+        },
+        {
+          "file": "archive-photo-150",
+          "source_id": 150,
+          "stage": "during",
+          "label": "Main floor — new timber floor around the open staircase",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-157",
+          "source_id": 157,
+          "stage": "during",
+          "label": "Kitchen — protected floor and rear doors during installation",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-149",
+          "source_id": 149,
+          "stage": "during",
+          "label": "Kitchen — timber flooring before cabinetry installation",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-152",
+          "source_id": 152,
+          "stage": "during",
+          "label": "Living room — stone fireplace surround installation",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-153",
+          "source_id": 153,
+          "stage": "during",
+          "label": "Shower — stone slab and herringbone tile installation",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "project-126",
+          "source_id": 154,
+          "stage": "during",
+          "label": "Shower — tiled enclosure before fittings and glass",
+          "width": 540,
+          "height": 720
+        },
+        {
+          "file": "archive-photo-148",
+          "source_id": 148,
+          "stage": "during",
+          "label": "Kitchen — cabinet carcasses and fireplace surround installation",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-147",
+          "source_id": 147,
+          "stage": "during",
+          "label": "Kitchen — island cabinetry and stone fireplace surround",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-146",
+          "source_id": 146,
+          "stage": "during",
+          "label": "Kitchen fireplace — shelving and stone surround being fitted",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-142",
+          "source_id": 142,
+          "stage": "during",
+          "label": "Front exterior — stone facade and canopy installation",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-141",
+          "source_id": 141,
+          "stage": "during",
+          "label": "Front exterior — facade finishing with scaffolding in place",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-140",
+          "source_id": 140,
+          "stage": "during",
+          "label": "Front exterior — entrance finish work",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-138",
+          "source_id": 138,
+          "stage": "during",
+          "label": "Front exterior — facade complete while site work continues",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-158",
+          "source_id": 158,
+          "stage": "during",
+          "label": "Main floor — protected flooring during finish work",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-145",
+          "source_id": 145,
+          "stage": "during",
+          "label": "Main floor — glass balustrade and final interior work",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-143",
+          "source_id": 143,
+          "stage": "during",
+          "label": "Staircase — glass balustrade installation and finish work",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-144",
+          "source_id": 144,
+          "stage": "during",
+          "label": "Kitchen — protected cabinets during finishing",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-095",
+          "source_id": 95,
+          "stage": "after",
+          "label": "Front exterior transformation — original and finished facade",
+          "width": 600,
+          "height": 600
+        },
+        {
+          "file": "exterior-front",
+          "source_id": 111,
+          "stage": "after",
+          "label": "Completed front exterior — stone entrance and dark bay",
+          "width": 570,
+          "height": 760
+        },
+        {
+          "file": "archive-photo-112",
+          "source_id": 112,
+          "stage": "after",
+          "label": "Completed front exterior — full view from the street",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-079",
+          "source_id": 79,
+          "stage": "after",
+          "label": "Completed front exterior — entrance and bay close view",
+          "width": 600,
+          "height": 600
+        },
+        {
+          "file": "project-196",
+          "source_id": 91,
+          "stage": "after",
+          "label": "Completed front exterior — driveway approach",
+          "width": 540,
+          "height": 720
+        },
+        {
+          "file": "archive-photo-092",
+          "source_id": 92,
+          "stage": "after",
+          "label": "Completed front exterior — view toward the entrance",
+          "width": 427,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-093",
+          "source_id": 93,
+          "stage": "after",
+          "label": "Completed front exterior — front elevation in summer",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-094",
+          "source_id": 94,
+          "stage": "after",
+          "label": "Completed front exterior — wide driveway view",
+          "width": 450,
+          "height": 600
         },
         {
           "file": "exterior-rear",
+          "source_id": 106,
           "stage": "after",
-          "label": "Finished rear addition and garden",
+          "label": "Completed rear addition — garden and full rear elevation",
           "width": 760,
-          "height": 503,
-          "source_id": 106
+          "height": 503
+        },
+        {
+          "file": "archive-photo-084",
+          "source_id": 84,
+          "stage": "after",
+          "label": "Completed rear addition — garden-facing elevation",
+          "width": 600,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-098",
+          "source_id": 98,
+          "stage": "after",
+          "label": "Basement transformation — framing and the completed room",
+          "width": 600,
+          "height": 600
+        },
+        {
+          "file": "open-plan-stair",
+          "source_id": 132,
+          "stage": "after",
+          "label": "Completed main floor — open staircase and rear kitchen view",
+          "width": 760,
+          "height": 570
+        },
+        {
+          "file": "project-143",
+          "source_id": 81,
+          "stage": "after",
+          "label": "Completed staircase — glass balustrade and open timber treads",
+          "width": 720,
+          "height": 720
+        },
+        {
+          "file": "archive-photo-083",
+          "source_id": 83,
+          "stage": "after",
+          "label": "Completed entrance — new front door and built-in storage",
+          "width": 600,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-080",
+          "source_id": 80,
+          "stage": "after",
+          "label": "Completed kitchen — island seating and cabinetry",
+          "width": 600,
+          "height": 600
+        },
+        {
+          "file": "project-093",
+          "source_id": 86,
+          "stage": "after",
+          "label": "Completed kitchen — island and built-in fireplace",
+          "width": 720,
+          "height": 720
+        },
+        {
+          "file": "archive-photo-100",
+          "source_id": 100,
+          "stage": "after",
+          "label": "Completed kitchen — fireplace wall and island toward the main floor",
+          "width": 600,
+          "height": 391
+        },
+        {
+          "file": "project-148",
+          "source_id": 101,
+          "stage": "after",
+          "label": "Completed kitchen — island, ovens and raised dining area",
+          "width": 720,
+          "height": 475
+        },
+        {
+          "file": "kitchen-island",
+          "source_id": 102,
+          "stage": "after",
+          "label": "Completed kitchen — island seating toward the rear doors",
+          "width": 760,
+          "height": 497
+        },
+        {
+          "file": "archive-photo-110",
+          "source_id": 110,
+          "stage": "after",
+          "label": "Completed kitchen fireplace — stone slab and display shelving",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-117",
+          "source_id": 117,
+          "stage": "after",
+          "label": "Completed kitchen — cabinetry and appliance passage",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "project-131",
+          "source_id": 118,
+          "stage": "after",
+          "label": "Completed kitchen — ovens, cooktop and tall cabinetry",
+          "width": 540,
+          "height": 720
+        },
+        {
+          "file": "project-132",
+          "source_id": 119,
+          "stage": "after",
+          "label": "Completed kitchen — cooktop and cabinet detail",
+          "width": 540,
+          "height": 720
+        },
+        {
+          "file": "trim-detail",
+          "source_id": 120,
+          "stage": "after",
+          "label": "Kitchen cabinetry — crown moulding corner detail",
+          "width": 570,
+          "height": 760
+        },
+        {
+          "file": "archive-photo-121",
+          "source_id": 121,
+          "stage": "after",
+          "label": "Kitchen cabinetry — crown moulding and upper cabinet detail",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-122",
+          "source_id": 122,
+          "stage": "after",
+          "label": "Completed kitchen — appliance wall and fireplace shelving",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "fireplace-builtins",
+          "source_id": 123,
+          "stage": "after",
+          "label": "Completed kitchen fireplace — full surround and shelving",
+          "width": 570,
+          "height": 760
+        },
+        {
+          "file": "archive-photo-124",
+          "source_id": 124,
+          "stage": "after",
+          "label": "Completed kitchen — island and pendant lighting",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "kitchen-cabinetry",
+          "source_id": 125,
+          "stage": "after",
+          "label": "Completed kitchen — cooktop, island and fireplace wall",
+          "width": 760,
+          "height": 570
+        },
+        {
+          "file": "archive-photo-126",
+          "source_id": 126,
+          "stage": "after",
+          "label": "Completed kitchen — full island and fireplace wall view",
+          "width": 600,
+          "height": 348
+        },
+        {
+          "file": "archive-photo-127",
+          "source_id": 127,
+          "stage": "after",
+          "label": "Completed kitchen — island and appliance wall close view",
+          "width": 250,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-128",
+          "source_id": 128,
+          "stage": "after",
+          "label": "Completed kitchen — island with illuminated cabinetry",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-129",
+          "source_id": 129,
+          "stage": "after",
+          "label": "Completed kitchen fireplace — slab and illuminated shelving",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-130",
+          "source_id": 130,
+          "stage": "after",
+          "label": "Completed main floor — view through to the rear kitchen",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "basement-living",
+          "source_id": 131,
+          "stage": "after",
+          "label": "Completed living room — fireplace and timber flooring",
+          "width": 760,
+          "height": 570
+        },
+        {
+          "file": "archive-photo-082",
+          "source_id": 82,
+          "stage": "after",
+          "label": "Completed living room — seating beside the stone fireplace",
+          "width": 600,
+          "height": 600
+        },
+        {
+          "file": "living-room",
+          "source_id": 96,
+          "stage": "after",
+          "label": "Completed living room — wide furnished fireplace view",
+          "width": 760,
+          "height": 504
+        },
+        {
+          "file": "archive-photo-097",
+          "source_id": 97,
+          "stage": "after",
+          "label": "Upper landing transformation — framed and completed hallway",
+          "width": 600,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-115",
+          "source_id": 115,
+          "stage": "after",
+          "label": "Upper landing transformation — construction and finished doors",
+          "width": 600,
+          "height": 600
+        },
+        {
+          "file": "hallway-doors",
+          "source_id": 133,
+          "stage": "after",
+          "label": "Completed upper landing — room doors and glass balustrade",
+          "width": 760,
+          "height": 570
+        },
+        {
+          "file": "project-094",
+          "source_id": 137,
+          "stage": "after",
+          "label": "Completed upper landing — full hallway view",
+          "width": 720,
+          "height": 540
+        },
+        {
+          "file": "project-137",
+          "source_id": 134,
+          "stage": "after",
+          "label": "Completed bathroom — glass shower enclosure",
+          "width": 540,
+          "height": 720
+        },
+        {
+          "file": "bathroom-double-vanity",
+          "source_id": 85,
+          "stage": "after",
+          "label": "Completed bathroom — stone shower and double vanity",
+          "width": 760,
+          "height": 760
+        },
+        {
+          "file": "archive-photo-109",
+          "source_id": 109,
+          "stage": "after",
+          "label": "Completed bathroom — double vanity and mirrors",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "bathroom-glass",
+          "source_id": 135,
+          "stage": "after",
+          "label": "Completed bathroom — tub, shower screen and vanity",
+          "width": 570,
+          "height": 760
+        },
+        {
+          "file": "archive-photo-136",
+          "source_id": 136,
+          "stage": "after",
+          "label": "Completed bathroom — tub and overhead shower",
+          "width": 480,
+          "height": 600
         }
       ]
     },
     {
-      "id": "curved-stair",
+      "id": "curved-home",
       "project": "Curved-stair home",
-      "title": "Curved staircase",
-      "aliases": [],
-      "evidence": "Intact staged original364, same curved staircase/door during345, complete316; collage327 anchors original/final.",
+      "title": "Curved-stair home",
+      "aliases": [
+        "curved-stair",
+        "curved-bathroom"
+      ],
+      "cover": "archive-photo-316",
+      "evidence": "Intact original staged foyer364, entry362, dining361, bathroom365 and exterior363 establish the original home. During345/350 preserves the distinctive curved stair and adjacent closet door; final316/328-331 has matching curved stair, landing window and light. Kitchen comparisons332/333 explicitly match the old kitchen to the finished kitchen334/335; matching bay dining, linked openings and original wall details connect the other main-floor stages. Bathroom365/348/349/339/314 retains two-window corner and bath/shower geometry. Include all confirmed project rooms, including final-only rooms, rather than require a separate three-photo match per room.",
       "sequence": [
         {
           "file": "archive-photo-364",
+          "source_id": 364,
           "stage": "before",
-          "label": "Original curved staircase",
+          "label": "Original staged foyer and curved staircase",
           "width": 600,
-          "height": 400,
-          "source_id": 364
+          "height": 400
         },
         {
-          "file": "archive-photo-345",
-          "stage": "during",
-          "label": "Main floor opened up around the staircase",
+          "file": "archive-photo-358",
+          "source_id": 358,
+          "stage": "before",
+          "label": "Existing foyer, staircase and adjoining room",
           "width": 600,
-          "height": 450,
-          "source_id": 345
+          "height": 450
         },
         {
-          "file": "archive-photo-316",
-          "stage": "after",
-          "label": "Finished staircase and tiled entrance",
+          "file": "archive-photo-353",
+          "source_id": 353,
+          "stage": "before",
+          "label": "Existing carpeted upstairs landing and timber railing",
           "width": 600,
-          "height": 400,
-          "source_id": 316
-        }
-      ]
-    },
-    {
-      "id": "curved-bathroom",
-      "project": "Curved-stair home",
-      "title": "Bathroom renovation",
-      "aliases": [],
-      "evidence": "Same rear toilet/window and right shower doorway. Original corner tub removed in348 then finished bathroom314.",
-      "sequence": [
+          "height": 450
+        },
+        {
+          "file": "archive-photo-357",
+          "source_id": 357,
+          "stage": "before",
+          "label": "Existing kitchen and adjoining rooms before the layout changes",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-361",
+          "source_id": 361,
+          "stage": "before",
+          "label": "Original furnished dining room beside the foyer",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "file": "archive-photo-356",
+          "source_id": 356,
+          "stage": "before",
+          "label": "Existing dining room and kitchen openings",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-359",
+          "source_id": 359,
+          "stage": "before",
+          "label": "Existing hallway and adjoining rooms",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-360",
+          "source_id": 360,
+          "stage": "before",
+          "label": "Existing main-floor circulation and timber flooring",
+          "width": 600,
+          "height": 450
+        },
         {
           "file": "archive-photo-365",
+          "source_id": 365,
           "stage": "before",
-          "label": "Original bathroom and corner tub",
+          "label": "Original corner bath, toilet and shower",
           "width": 600,
-          "height": 400,
-          "source_id": 365
+          "height": 400
+        },
+        {
+          "file": "archive-photo-363",
+          "source_id": 363,
+          "stage": "before",
+          "label": "Original house exterior, garages and entrance",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "file": "archive-photo-362",
+          "source_id": 362,
+          "stage": "before",
+          "label": "Original interior view of the entrance doors",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "file": "archive-photo-354",
+          "source_id": 354,
+          "stage": "during",
+          "label": "Early wall removal between the original rooms",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-355",
+          "source_id": 355,
+          "stage": "during",
+          "label": "Floor and partition opening beside the kitchen",
+          "width": 600,
+          "height": 450
         },
         {
           "file": "archive-photo-348",
+          "source_id": 348,
           "stage": "during",
-          "label": "Old tub and finishes removed",
+          "label": "Bathroom fixtures and floor removed for renovation",
           "width": 600,
-          "height": 450,
-          "source_id": 348
+          "height": 450
+        },
+        {
+          "file": "archive-photo-349",
+          "source_id": 349,
+          "stage": "during",
+          "label": "Bathroom stripping and preparation beside the two windows",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-345",
+          "source_id": 345,
+          "stage": "during",
+          "label": "Main-floor opening work around the original curved stair",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-350",
+          "source_id": 350,
+          "stage": "during",
+          "label": "Stair coverings removed during renovation",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-346",
+          "source_id": 346,
+          "stage": "during",
+          "label": "Kitchen and adjoining hallway during opening and ceiling work",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-344",
+          "source_id": 344,
+          "stage": "during",
+          "label": "Ceiling and partition demolition across the main floor",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-347",
+          "source_id": 347,
+          "stage": "during",
+          "label": "Exposed ceiling and new openings toward the bay dining area",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-351",
+          "source_id": 351,
+          "stage": "during",
+          "label": "Main-floor structural and ceiling work toward the breakfast bay",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-352",
+          "source_id": 352,
+          "stage": "during",
+          "label": "Partition framing and floor preparation",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-343",
+          "source_id": 343,
+          "stage": "during",
+          "label": "Floor preparation and underlayment installation",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-342",
+          "source_id": 342,
+          "stage": "during",
+          "label": "Main-floor floor leveling and wall preparation",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-339",
+          "source_id": 339,
+          "stage": "during",
+          "label": "Shower tile installed while fittings and enclosure remain in progress",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-340",
+          "source_id": 340,
+          "stage": "during",
+          "label": "Bay dining area during kitchen installation and cleanup",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-341",
+          "source_id": 341,
+          "stage": "during",
+          "label": "Fireplace surround and cabinetry before electrical finishing",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-336",
+          "source_id": 336,
+          "stage": "during",
+          "label": "Dark stair treads and metal railing installed; lighting still in progress",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-337",
+          "source_id": 337,
+          "stage": "during",
+          "label": "Staircase and adjacent floor during electrical finishing",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-338",
+          "source_id": 338,
+          "stage": "during",
+          "label": "Curved stair before the step lights and wall fittings were completed",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-316",
+          "source_id": 316,
+          "stage": "after",
+          "label": "Completed curved staircase and foyer",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "file": "archive-photo-331",
+          "source_id": 331,
+          "stage": "after",
+          "label": "Finished staircase with illuminated treads",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-328",
+          "source_id": 328,
+          "stage": "after",
+          "label": "Finished upper landing railing and lantern",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-329",
+          "source_id": 329,
+          "stage": "after",
+          "label": "Completed curved stair viewed from the landing",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-330",
+          "source_id": 330,
+          "stage": "after",
+          "label": "Finished upper landing and metal balustrade",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-334",
+          "source_id": 334,
+          "stage": "after",
+          "label": "Completed white kitchen and central island",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-335",
+          "source_id": 335,
+          "stage": "after",
+          "label": "Finished island, range and bay dining area",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-332",
+          "source_id": 332,
+          "stage": "after",
+          "label": "Kitchen transformation",
+          "width": 600,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-317",
+          "source_id": 317,
+          "stage": "after",
+          "label": "Finished dining nook with bay windows",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "file": "archive-photo-318",
+          "source_id": 318,
+          "stage": "after",
+          "label": "Completed living room fireplace and built-in shelves",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "file": "archive-photo-319",
+          "source_id": 319,
+          "stage": "after",
+          "label": "Finished connected living room and kitchen",
+          "width": 600,
+          "height": 400
         },
         {
           "file": "archive-photo-314",
+          "source_id": 314,
           "stage": "after",
-          "label": "Finished bathroom with tub and glass shower",
+          "label": "Completed bathroom with freestanding bath and glass shower",
           "width": 600,
-          "height": 400,
-          "source_id": 314
+          "height": 400
+        },
+        {
+          "file": "archive-photo-313",
+          "source_id": 313,
+          "stage": "after",
+          "label": "Completed laundry cabinetry, stacked appliances and sink",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "file": "archive-photo-315",
+          "source_id": 315,
+          "stage": "after",
+          "label": "Finished walk-in closet storage and drawers",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "file": "archive-photo-322",
+          "source_id": 322,
+          "stage": "after",
+          "label": "Finished basement kitchen and dining space",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "file": "archive-photo-323",
+          "source_id": 323,
+          "stage": "after",
+          "label": "Completed basement kitchen cabinetry and appliances",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "file": "archive-photo-324",
+          "source_id": 324,
+          "stage": "after",
+          "label": "Finished basement living area",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "file": "archive-photo-325",
+          "source_id": 325,
+          "stage": "after",
+          "label": "Completed basement living space and stairs",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "file": "archive-photo-321",
+          "source_id": 321,
+          "stage": "after",
+          "label": "Finished basement exercise room",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "file": "archive-photo-326",
+          "source_id": 326,
+          "stage": "after",
+          "label": "Completed front entrance and dark double doors",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "file": "archive-photo-320",
+          "source_id": 320,
+          "stage": "after",
+          "label": "Finished entrance viewed from inside",
+          "width": 600,
+          "height": 400
+        },
+        {
+          "file": "archive-photo-312",
+          "source_id": 312,
+          "stage": "after",
+          "label": "Completed exterior, entrance and landscaping",
+          "width": 600,
+          "height": 400
         }
       ]
     },
     {
-      "id": "salon-main",
+      "id": "salon",
       "project": "Salon renovation",
-      "title": "Main salon",
-      "aliases": [],
-      "evidence": "Same blue/orange original shell and exposed ducts.427 framing/floor removal;411 partitions/stone wall work;404 installation of exact nail wall cabinets and backsplash seen complete389.",
+      "title": "Salon renovation",
+      "aliases": [
+        "salon-main",
+        "salon-treatment",
+        "salon-washroom"
+      ],
+      "cover": "archive-photo-389",
+      "evidence": "Existing380/379/381-383/385/388 and early demolition431/432 preserve the orange/blue rooms, blue exposed ceiling, round duct layout and unit104 entrance.427-430 framing,425/426 boarding,410-424 preparation/tiling and400-405 installation show a continuous fit-out to operational389-399 with the same long room, ducts, partitions and glazing. Supplied375/376/377 comparisons explicitly corroborate washroom, treatment room and kitchenette associations. Archive labels alone are not used as project identity:374 is included because375 directly matches it to salon washroom378/408.",
       "sequence": [
         {
           "file": "archive-photo-380",
+          "source_id": 380,
           "stage": "before",
-          "label": "Original shop interior",
+          "label": "Existing orange-and-blue commercial interior",
           "width": 277,
-          "height": 600,
-          "source_id": 380
+          "height": 600
+        },
+        {
+          "file": "archive-photo-379",
+          "source_id": 379,
+          "stage": "before",
+          "label": "Existing room and doorway before the salon fit-out",
+          "width": 277,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-381",
+          "source_id": 381,
+          "stage": "before",
+          "label": "Existing glazed entrance vestibule",
+          "width": 277,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-382",
+          "source_id": 382,
+          "stage": "before",
+          "label": "Existing front room and street-facing window",
+          "width": 277,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-383",
+          "source_id": 383,
+          "stage": "before",
+          "label": "Existing entrance-side wall and exposed services",
+          "width": 277,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-385",
+          "source_id": 385,
+          "stage": "before",
+          "label": "Existing blue room before the salon renovation",
+          "width": 277,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-388",
+          "source_id": 388,
+          "stage": "before",
+          "label": "Existing rear blue room and adjoining doorways",
+          "width": 277,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-384",
+          "source_id": 384,
+          "stage": "before",
+          "label": "Existing treatment alcove with exposed duct and unfinished wall",
+          "width": 277,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-378",
+          "source_id": 378,
+          "stage": "before",
+          "label": "Existing washroom before the renovation",
+          "width": 277,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-387",
+          "source_id": 387,
+          "stage": "before",
+          "label": "Existing blue-walled kitchenette and counter",
+          "width": 277,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-431",
+          "source_id": 431,
+          "stage": "during",
+          "label": "Early removal of the original room partitions",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-432",
+          "source_id": 432,
+          "stage": "during",
+          "label": "Original partition and doorway demolition",
+          "width": 450,
+          "height": 600
         },
         {
           "file": "archive-photo-427",
+          "source_id": 427,
           "stage": "during",
-          "label": "Floor removal and new partition framing",
+          "label": "New metal partition framing beside the entrance",
           "width": 450,
-          "height": 600,
-          "source_id": 427
+          "height": 600
+        },
+        {
+          "file": "archive-photo-428",
+          "source_id": 428,
+          "stage": "during",
+          "label": "Entrance and new partition framing from the side",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-429",
+          "source_id": 429,
+          "stage": "during",
+          "label": "Metal framing across the former open room",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-430",
+          "source_id": 430,
+          "stage": "during",
+          "label": "New treatment-room partition and doorway framing",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-425",
+          "source_id": 425,
+          "stage": "during",
+          "label": "Partition board installation under the original exposed ceiling",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-426",
+          "source_id": 426,
+          "stage": "during",
+          "label": "New entrance-side partition and wall boarding",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-424",
+          "source_id": 424,
+          "stage": "during",
+          "label": "Boarded room divisions before finishing",
+          "width": 450,
+          "height": 600
         },
         {
           "file": "archive-photo-411",
+          "source_id": 411,
           "stage": "during",
-          "label": "Walls and finishes taking shape",
+          "label": "Main salon floor and partition preparation",
           "width": 450,
-          "height": 600,
-          "source_id": 411
+          "height": 600
         },
         {
-          "file": "archive-photo-404",
+          "file": "archive-photo-412",
+          "source_id": 412,
           "stage": "during",
-          "label": "Manicure wall and cabinets being installed",
-          "width": 600,
-          "height": 450,
-          "source_id": 404
-        },
-        {
-          "file": "archive-photo-389",
-          "stage": "after",
-          "label": "Finished salon and manicure stations",
+          "label": "Salon circulation and wall preparation",
           "width": 450,
-          "height": 600,
-          "source_id": 389
-        }
-      ]
-    },
-    {
-      "id": "salon-treatment",
-      "project": "Salon renovation",
-      "title": "Treatment room",
-      "aliases": [],
-      "evidence": "Supplied collage376 exact three views. Label384 as existing treatment space rather than an original finished room.",
-      "sequence": [
-        {
-          "file": "archive-photo-384",
-          "stage": "before",
-          "label": "Existing treatment space",
-          "width": 277,
-          "height": 600,
-          "source_id": 384
+          "height": 600
         },
         {
-          "file": "archive-photo-406",
+          "file": "archive-photo-413",
+          "source_id": 413,
           "stage": "during",
-          "label": "Treatment room during renovation",
+          "label": "Protected floor and unfinished room partitions",
           "width": 450,
-          "height": 600,
-          "source_id": 406
+          "height": 600
         },
         {
-          "file": "archive-photo-396",
-          "stage": "after",
-          "label": "Finished treatment room",
-          "width": 600,
-          "height": 450,
-          "source_id": 396
-        }
-      ]
-    },
-    {
-      "id": "salon-washroom",
-      "project": "Salon renovation",
-      "title": "Washroom",
-      "aliases": [],
-      "evidence": "Supplied collage375 exact three views; same toilet, ceiling vent and vanity.",
-      "sequence": [
+          "file": "archive-photo-414",
+          "source_id": 414,
+          "stage": "during",
+          "label": "Corridor and treatment-room openings during wall finishing",
+          "width": 450,
+          "height": 600
+        },
         {
-          "file": "archive-photo-378",
-          "stage": "before",
-          "label": "Original washroom",
-          "width": 277,
-          "height": 600,
-          "source_id": 378
+          "file": "archive-photo-415",
+          "source_id": 415,
+          "stage": "during",
+          "label": "Treatment-room partitions and corridor before final finishes",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-416",
+          "source_id": 416,
+          "stage": "during",
+          "label": "Preparation of the salon floor and new room divisions",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-410",
+          "source_id": 410,
+          "stage": "during",
+          "label": "Treatment corner during wall repair and preparation",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-423",
+          "source_id": 423,
+          "stage": "during",
+          "label": "Washroom door opening and wall repairs",
+          "width": 450,
+          "height": 600
         },
         {
           "file": "archive-photo-408",
+          "source_id": 408,
           "stage": "during",
-          "label": "Washroom during renovation",
+          "label": "Washroom rebuilding with fixtures moved aside",
           "width": 450,
-          "height": 600,
-          "source_id": 408
+          "height": 600
+        },
+        {
+          "file": "archive-photo-409",
+          "source_id": 409,
+          "stage": "during",
+          "label": "New room openings and priming under the painted exposed services",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-420",
+          "source_id": 420,
+          "stage": "during",
+          "label": "Floor tile installation in progress",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-421",
+          "source_id": 421,
+          "stage": "during",
+          "label": "Tile setting across the salon floor",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-418",
+          "source_id": 418,
+          "stage": "during",
+          "label": "New floor tile and unfinished reception-side wall",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-419",
+          "source_id": 419,
+          "stage": "during",
+          "label": "Completed tile laying while walls and fittings remain in progress",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-417",
+          "source_id": 417,
+          "stage": "during",
+          "label": "Back-room tile installation during the salon fit-out",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-406",
+          "source_id": 406,
+          "stage": "during",
+          "label": "Treatment room painting and floor preparation",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-422",
+          "source_id": 422,
+          "stage": "during",
+          "label": "Washroom floor and wall finishing around the existing fixtures",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-407",
+          "source_id": 407,
+          "stage": "during",
+          "label": "Salon walls and installation preparation after tiling",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-403",
+          "source_id": 403,
+          "stage": "during",
+          "label": "Service-area and lighting installation in progress",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-405",
+          "source_id": 405,
+          "stage": "during",
+          "label": "Salon cabinetry installation and site work",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-404",
+          "source_id": 404,
+          "stage": "during",
+          "label": "Service wall cabinets being fitted",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-400",
+          "source_id": 400,
+          "stage": "during",
+          "label": "Kitchenette cabinets fitted before countertop and sink installation",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-401",
+          "source_id": 401,
+          "stage": "during",
+          "label": "Service cabinetry and wall finish before mirrors and final fittings",
+          "width": 600,
+          "height": 450
+        },
+        {
+          "file": "archive-photo-402",
+          "source_id": 402,
+          "stage": "during",
+          "label": "Reception feature wall before signage and remaining wiring were completed",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-389",
+          "source_id": 389,
+          "stage": "after",
+          "label": "Completed salon workstations and product display",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-390",
+          "source_id": 390,
+          "stage": "after",
+          "label": "Finished waiting area and framed display wall",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-391",
+          "source_id": 391,
+          "stage": "after",
+          "label": "Completed salon interior and service counter",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-392",
+          "source_id": 392,
+          "stage": "after",
+          "label": "Finished salon chairs and curved display wall",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-393",
+          "source_id": 393,
+          "stage": "after",
+          "label": "Completed service area viewed along the salon",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-394",
+          "source_id": 394,
+          "stage": "after",
+          "label": "Finished salon interior from the entrance side",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-395",
+          "source_id": 395,
+          "stage": "after",
+          "label": "Completed treatment chair, cabinetry and feature wall",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-396",
+          "source_id": 396,
+          "stage": "after",
+          "label": "Finished treatment room with veined wall panel",
+          "width": 600,
+          "height": 450
         },
         {
           "file": "archive-photo-374",
+          "source_id": 374,
           "stage": "after",
-          "label": "Finished washroom",
+          "label": "Finished washroom with new vanity, toilet and wall finish",
           "width": 277,
-          "height": 600,
-          "source_id": 374
+          "height": 600
+        },
+        {
+          "file": "archive-photo-377",
+          "source_id": 377,
+          "stage": "after",
+          "label": "Kitchenette transformation",
+          "width": 600,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-397",
+          "source_id": 397,
+          "stage": "after",
+          "label": "Completed reception counter and waiting area",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-398",
+          "source_id": 398,
+          "stage": "after",
+          "label": "Finished illuminated feature wall and waiting chairs",
+          "width": 450,
+          "height": 600
+        },
+        {
+          "file": "archive-photo-399",
+          "source_id": 399,
+          "stage": "after",
+          "label": "Completed salon signage and feature-wall detail",
+          "width": 450,
+          "height": 600
         }
       ]
     }

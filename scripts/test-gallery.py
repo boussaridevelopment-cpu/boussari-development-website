@@ -48,5 +48,20 @@ class GalleryContract(unittest.TestCase):
         self.assertLess(page.index('test-before.webp'),page.index('test-during.webp'))
         self.assertLess(page.index('test-during.webp'),page.index('test-after.webp'))
 
+    def test_unfinished_project_cover_is_rejected(self):
+        data=copy.deepcopy(VALID)
+        data['rooms'][0]['cover']='test-during'
+        result,_=self.build(data)
+        self.assertNotEqual(result.returncode,0,'Project cover showed incomplete work')
+        self.assertIn('covers must show completed',result.stderr)
+
+    def test_project_has_stage_navigation_and_one_continuous_viewer(self):
+        result,page=self.build(copy.deepcopy(VALID))
+        self.assertEqual(result.returncode,0,result.stderr)
+        self.assertEqual(page.count('data-project="test-room"'),1)
+        for stage in ['before','during','after']:
+            self.assertIn(f'href="#test-room-{stage}"',page)
+            self.assertIn(f'id="test-room-{stage}"',page)
+
 if __name__=='__main__':unittest.main(verbosity=2)
 
