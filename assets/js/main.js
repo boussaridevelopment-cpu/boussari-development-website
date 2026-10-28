@@ -201,8 +201,10 @@
     nav.addEventListener('click', e => { if (e.target.closest('a')) closeMenu(false); });
     document.addEventListener('keydown', e => {
       if (e.key === 'Escape') {
-        if (nav.classList.contains('open')) closeMenu(true);
-        if (serviceDetails && serviceDetails.open) {
+        if (nav.classList.contains('open')) {
+          if (serviceDetails) serviceDetails.open = false;
+          closeMenu(true);
+        } else if (serviceDetails && serviceDetails.open) {
           serviceDetails.open = false;
           serviceDetails.querySelector('summary').focus();
         }
@@ -259,12 +261,14 @@
     const links = [...document.querySelectorAll('.photo-open')];
     let active = [], index = 0, opener = null;
     function show(step) {
-      index = (step + active.length) % active.length;
+      index = Math.max(0, Math.min(step, active.length - 1));
       const link = active[index];
       image.src = link.href;
       image.alt = link.querySelector('img').alt;
       caption.textContent = link.dataset.caption;
       position.textContent = `${index + 1} / ${active.length}`;
+      dialog.querySelector('.photo-prev').disabled = index === 0;
+      dialog.querySelector('.photo-next').disabled = index === active.length - 1;
     }
     links.forEach(link => link.addEventListener('click', e => {
       e.preventDefault();
@@ -293,10 +297,16 @@
 
   document.querySelectorAll('form[data-email-form]').forEach((form, formIndex) => {
     let review;
+    form.querySelectorAll('input[required], textarea[required]').forEach(field => {
+      field.addEventListener('input', () => field.setCustomValidity(''));
+    });
     form.addEventListener('submit', e => {
       e.preventDefault();
       const honeypot = form.querySelector('.hp-field input');
       if (honeypot && honeypot.value) return;
+      form.querySelectorAll('input[required], textarea[required]').forEach(field => {
+        field.setCustomValidity(field.value.trim() ? '' : 'Please complete this field.');
+      });
       if (!form.checkValidity()) return form.reportValidity();
       const lines = ['Hello Boussari Development,', '', 'I would like to discuss a project.', ''];
       form.querySelectorAll('input, select, textarea').forEach(field => {

@@ -1,233 +1,70 @@
 {
-  "version": 2,
+  "version": 3,
   "rooms": [
     {
       "id": "kitchen",
       "project": "Townhouse renovation",
-      "title": "Galley kitchen",
-      "evidence": "Supplied kitchen comparisons 4 and 6; matching long galley, doors and rear window.",
-      "sequence": [
-        {
-          "file": "kitchen-before",
-          "stage": "before",
-          "label": "Before — original kitchen",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "galley-kitchen",
-          "stage": "after",
-          "label": "After — new cabinetry and flooring",
-          "width": 2048,
-          "height": 1536
-        }
+      "title": "Living, dining & kitchen",
+      "aliases": [
+        "living-room"
       ],
-      "additional": [
-        {
-          "file": "archive-photo-069",
-          "stage": "before",
-          "label": "Before — additional view 1",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-071",
-          "stage": "before",
-          "label": "Before — additional view 2",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-075",
-          "stage": "before",
-          "label": "Before — additional view 3",
-          "width": 640,
-          "height": 428
-        },
-        {
-          "file": "archive-photo-076",
-          "stage": "before",
-          "label": "Before — additional view 4",
-          "width": 274,
-          "height": 182
-        },
-        {
-          "file": "project-011",
-          "stage": "after",
-          "label": "Finished view — additional view 1",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-037",
-          "stage": "after",
-          "label": "Finished view — additional view 2",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "project-020",
-          "stage": "after",
-          "label": "Finished view — additional view 3",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "kitchen-storage",
-          "stage": "after",
-          "label": "Finished view — additional view 4",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-041",
-          "stage": "after",
-          "label": "Finished view — additional view 5",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-004",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 1",
-          "width": 2048,
-          "height": 1886
-        },
-        {
-          "file": "archive-photo-006",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 2",
-          "width": 2048,
-          "height": 2048
-        }
-      ]
-    },
-    {
-      "id": "living-room",
-      "project": "Townhouse renovation",
-      "title": "Living and dining rooms",
-      "evidence": "Original fireplace and front windows; source comparison 13 matches the framing view to the finished main floor.",
+      "evidence": "Combined main-floor living, dining and kitchen scope. Supplied collages3/4/6/8 connect original/final rooms;13 explicitly connects52 to35.52 has exposed ceiling joists;48 has new ceiling board around identical right stair and framed cubicle.",
       "sequence": [
         {
           "file": "project-008",
           "stage": "before",
-          "label": "Before — divided living and dining rooms",
-          "width": 2048,
-          "height": 1536
+          "label": "Original living and dining rooms",
+          "width": 720,
+          "height": 540,
+          "source_id": 72
         },
         {
-          "file": "project-002",
-          "stage": "after",
-          "label": "After — connected living and dining rooms",
-          "width": 2048,
-          "height": 1536
-        }
-      ],
-      "additional": [
-        {
-          "file": "archive-photo-077",
+          "file": "kitchen-before",
           "stage": "before",
-          "label": "Before — additional view 1",
-          "width": 274,
-          "height": 182
-        },
-        {
-          "file": "archive-photo-048",
-          "stage": "during",
-          "label": "During renovation — additional view 1",
-          "width": 2048,
-          "height": 1536
+          "label": "Original kitchen",
+          "width": 760,
+          "height": 570,
+          "source_id": 70
         },
         {
           "file": "interior-framing",
           "stage": "during",
-          "label": "During — exposed main-floor framing",
-          "width": 1536,
-          "height": 2048
+          "label": "Main-floor walls and ceiling opened up",
+          "width": 570,
+          "height": 760,
+          "source_id": 52
         },
         {
-          "file": "archive-photo-001",
-          "stage": "after",
-          "label": "Finished view — additional view 1",
-          "width": 1536,
-          "height": 2048
+          "file": "archive-photo-048",
+          "stage": "during",
+          "label": "New partitions and ceiling taking shape",
+          "width": 600,
+          "height": 450,
+          "source_id": 48
         },
         {
-          "file": "project-029",
+          "file": "project-002",
           "stage": "after",
-          "label": "Finished view — additional view 2",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-031",
-          "stage": "after",
-          "label": "Finished view — additional view 3",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "project-014",
-          "stage": "after",
-          "label": "Finished view — additional view 4",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-033",
-          "stage": "after",
-          "label": "Finished view — additional view 5",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-034",
-          "stage": "after",
-          "label": "Finished view — additional view 6",
-          "width": 2049,
-          "height": 1535
+          "label": "Finished living and dining rooms",
+          "width": 720,
+          "height": 540,
+          "source_id": 24
         },
         {
           "file": "archive-photo-035",
           "stage": "after",
-          "label": "Finished view — additional view 7",
-          "width": 2048,
-          "height": 1536
+          "label": "Finished main floor and staircase",
+          "width": 600,
+          "height": 450,
+          "source_id": 35
         },
         {
-          "file": "archive-photo-003",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 1",
-          "width": 2048,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-005",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 2",
-          "width": 2048,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-007",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 3",
-          "width": 2048,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-008",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 4",
-          "width": 2048,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-013",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 5",
-          "width": 2048,
-          "height": 2048
+          "file": "galley-kitchen",
+          "stage": "after",
+          "label": "Finished galley kitchen",
+          "width": 760,
+          "height": 570,
+          "source_id": 38
         }
       ]
     },
@@ -235,72 +72,32 @@
       "id": "bathroom",
       "project": "Townhouse renovation",
       "title": "Bathroom beneath the sloped ceiling",
-      "evidence": "Supplied comparisons 11 and 12 explicitly link original room, exposed roof framing and completed bathroom.",
+      "aliases": [],
+      "evidence": "Supplied collages11/12, same sloped ceiling and rear-neighbour outlook.",
       "sequence": [
         {
           "file": "bathroom-before",
           "stage": "before",
-          "label": "Before — original room",
-          "width": 2048,
-          "height": 1536
+          "label": "Original room beneath the sloped ceiling",
+          "width": 760,
+          "height": 570,
+          "source_id": 67
         },
         {
           "file": "archive-photo-051",
           "stage": "during",
-          "label": "During — roof and wall framing",
-          "width": 1536,
-          "height": 2048
+          "label": "Exposed roof and wall framing",
+          "width": 450,
+          "height": 600,
+          "source_id": 51
         },
         {
           "file": "bathroom-tub",
           "stage": "after",
-          "label": "After — freestanding tub and shower",
-          "width": 2048,
-          "height": 1536
-        }
-      ],
-      "additional": [
-        {
-          "file": "archive-photo-029",
-          "stage": "after",
-          "label": "Finished view — additional view 1",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "project-055",
-          "stage": "after",
-          "label": "Finished view — additional view 2",
-          "width": 1537,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-017",
-          "stage": "after",
-          "label": "Finished view — additional view 3",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "bathroom-shower",
-          "stage": "after",
-          "label": "Finished view — additional view 4",
-          "width": 2172,
-          "height": 1448
-        },
-        {
-          "file": "archive-photo-011",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 1",
-          "width": 2048,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-012",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 2",
-          "width": 2048,
-          "height": 2048
+          "label": "Finished bathroom with freestanding tub",
+          "width": 760,
+          "height": 570,
+          "source_id": 28
         }
       ]
     },
@@ -308,30 +105,32 @@
       "id": "bedroom",
       "project": "Townhouse renovation",
       "title": "Front room",
-      "evidence": "Supplied comparison 10 pairs these exact views.",
+      "aliases": [],
+      "evidence": "Same faceted original bay in68/56; supplied collage10 explicitly pairs68/15.",
       "sequence": [
         {
           "file": "project-009",
           "stage": "before",
-          "label": "Before — original front room",
-          "width": 2048,
-          "height": 1536
+          "label": "Original front room and bay window",
+          "width": 720,
+          "height": 540,
+          "source_id": 68
+        },
+        {
+          "file": "archive-photo-056",
+          "stage": "during",
+          "label": "Window opening and walls during construction",
+          "width": 600,
+          "height": 450,
+          "source_id": 56
         },
         {
           "file": "project-048",
           "stage": "after",
-          "label": "After — finished front room",
-          "width": 1536,
-          "height": 2048
-        }
-      ],
-      "additional": [
-        {
-          "file": "archive-photo-010",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 1",
-          "width": 2048,
-          "height": 2048
+          "label": "Finished front room",
+          "width": 540,
+          "height": 720,
+          "source_id": 15
         }
       ]
     },
@@ -339,737 +138,75 @@
       "id": "townhouse-front",
       "project": "Townhouse renovation",
       "title": "Front exterior",
-      "evidence": "Same adjoining houses, roofline and front elevation.",
+      "aliases": [
+        "exterior"
+      ],
+      "evidence": "Same adjoining houses, dormer and front extension footprint; completed final stairs and landscaped facade.",
       "sequence": [
         {
           "file": "archive-photo-073",
           "stage": "before",
-          "label": "Before — original facade",
-          "width": 1536,
-          "height": 2048
+          "label": "Original front exterior",
+          "width": 450,
+          "height": 600,
+          "source_id": 73
         },
         {
           "file": "archive-photo-053",
           "stage": "during",
-          "label": "During — facade construction",
-          "width": 1536,
-          "height": 2048
+          "label": "Facade during renovation",
+          "width": 450,
+          "height": 600,
+          "source_id": 53
         },
         {
           "file": "archive-photo-030",
           "stage": "after",
-          "label": "After — completed facade",
-          "width": 1212,
-          "height": 2048
-        }
-      ],
-      "additional": [
-        {
-          "file": "archive-photo-061",
-          "stage": "during",
-          "label": "During renovation — additional view 1",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-042",
-          "stage": "during",
-          "label": "During renovation — additional view 2",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-026",
-          "stage": "during",
-          "label": "During renovation — additional view 3",
-          "width": 1536,
-          "height": 2048
-        }
-      ]
-    },
-    {
-      "id": "townhouse-rear",
-      "project": "Townhouse renovation",
-      "title": "Rear exterior",
-      "evidence": "Same townhouse rear elevation and adjacent brick side wall; intermediate deck view shows the rebuilt rear opening.",
-      "sequence": [
-        {
-          "file": "archive-photo-074",
-          "stage": "before",
-          "label": "Before — original rear elevation",
-          "width": 274,
-          "height": 182
-        },
-        {
-          "file": "archive-photo-046",
-          "stage": "after",
-          "label": "After — rear exterior",
-          "width": 1536,
-          "height": 2048
-        }
-      ],
-      "additional": [
-        {
-          "file": "archive-photo-063",
-          "stage": "before",
-          "label": "Before — additional view 1",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "deck-in-progress",
-          "stage": "during",
-          "label": "During — rear deck and exterior work",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-044",
-          "stage": "after",
-          "label": "Finished view — additional view 1",
-          "width": 2048,
-          "height": 2048
-        },
-        {
-          "file": "side-exterior",
-          "stage": "after",
-          "label": "Finished view — additional view 2",
-          "width": 1536,
-          "height": 2048
+          "label": "Finished facade, entrance and steps",
+          "width": 355,
+          "height": 600,
+          "source_id": 30
         }
       ]
     },
     {
       "id": "main-floor",
       "project": "Open-plan home",
-      "title": "Main floor and staircase",
-      "evidence": "Supplied staircase comparisons 113, 114, 116 and 166, with the same stair position and front door.",
+      "title": "Main floor & staircase",
+      "aliases": [],
+      "evidence": "Supplied collages113/114/116/166 anchor all phases.170 has bare subfloor and drywall;150 has new timber flooring, same staircase;132 complete.",
       "sequence": [
         {
           "file": "project-179",
           "stage": "before",
-          "label": "Before — original staircase and divided floor",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-150",
-          "stage": "during",
-          "label": "During — open floor and stair construction",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "open-plan-stair",
-          "stage": "after",
-          "label": "After — finished open staircase",
-          "width": 2048,
-          "height": 1536
-        }
-      ],
-      "additional": [
-        {
-          "file": "archive-photo-222",
-          "stage": "before",
-          "label": "Before — additional view 1",
-          "width": 2048,
-          "height": 1536
+          "label": "Original main floor and enclosed staircase",
+          "width": 720,
+          "height": 540,
+          "source_id": 223
         },
         {
           "file": "archive-photo-170",
           "stage": "during",
-          "label": "During renovation — additional view 1",
-          "width": 1600,
-          "height": 900
+          "label": "New staircase and drywall over the subfloor",
+          "width": 600,
+          "height": 338,
+          "source_id": 170
         },
         {
-          "file": "archive-photo-171",
+          "file": "archive-photo-150",
           "stage": "during",
-          "label": "During renovation — additional view 2",
-          "width": 1600,
-          "height": 900
+          "label": "Flooring installed; finishing work underway",
+          "width": 600,
+          "height": 450,
+          "source_id": 150
         },
         {
-          "file": "archive-photo-172",
-          "stage": "during",
-          "label": "During renovation — additional view 3",
-          "width": 1200,
-          "height": 1600
-        },
-        {
-          "file": "archive-photo-160",
-          "stage": "during",
-          "label": "During renovation — additional view 4",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-158",
-          "stage": "during",
-          "label": "During renovation — additional view 5",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-145",
-          "stage": "during",
-          "label": "During renovation — additional view 6",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-143",
-          "stage": "during",
-          "label": "During renovation — additional view 7",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "project-143",
+          "file": "open-plan-stair",
           "stage": "after",
-          "label": "Finished view — additional view 1",
-          "width": 1080,
-          "height": 1080
-        },
-        {
-          "file": "archive-photo-088",
-          "stage": "after",
-          "label": "Finished view — additional view 2",
-          "width": 1080,
-          "height": 1080
-        },
-        {
-          "file": "archive-photo-083",
-          "stage": "after",
-          "label": "Finished view — additional view 3",
-          "width": 1080,
-          "height": 1080
-        },
-        {
-          "file": "project-130",
-          "stage": "after",
-          "label": "Finished view — additional view 4",
-          "width": 1080,
-          "height": 1080
-        },
-        {
-          "file": "archive-photo-113",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 1",
-          "width": 1125,
-          "height": 2001
-        },
-        {
-          "file": "archive-photo-114",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 2",
-          "width": 2048,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-116",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 3",
-          "width": 2048,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-166",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 4",
-          "width": 2048,
-          "height": 2048
-        }
-      ]
-    },
-    {
-      "id": "island-kitchen",
-      "project": "Open-plan home",
-      "title": "Kitchen and built-in fireplace",
-      "evidence": "Supplied comparison 99 links the unfinished room to this kitchen; distinctive built-in fireplace and rear openings.",
-      "sequence": [
-        {
-          "file": "project-135",
-          "stage": "during",
-          "label": "During — room prepared for fitting out",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-144",
-          "stage": "during",
-          "label": "During — cabinets and fireplace being fitted",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "project-093",
-          "stage": "after",
-          "label": "After — completed kitchen and fireplace",
-          "width": 1080,
-          "height": 1080
-        }
-      ],
-      "additional": [
-        {
-          "file": "archive-photo-148",
-          "stage": "during",
-          "label": "During renovation — additional view 1",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-147",
-          "stage": "during",
-          "label": "During renovation — additional view 2",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-146",
-          "stage": "during",
-          "label": "During renovation — additional view 3",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-149",
-          "stage": "during",
-          "label": "During renovation — additional view 4",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-080",
-          "stage": "after",
-          "label": "Finished view — additional view 1",
-          "width": 1080,
-          "height": 1080
-        },
-        {
-          "file": "archive-photo-087",
-          "stage": "after",
-          "label": "Finished view — additional view 2",
-          "width": 1080,
-          "height": 1080
-        },
-        {
-          "file": "archive-photo-100",
-          "stage": "after",
-          "label": "Finished view — additional view 3",
-          "width": 1125,
-          "height": 733
-        },
-        {
-          "file": "project-148",
-          "stage": "after",
-          "label": "Finished view — additional view 4",
-          "width": 1125,
-          "height": 742
-        },
-        {
-          "file": "kitchen-island",
-          "stage": "after",
-          "label": "Finished view — additional view 5",
-          "width": 1125,
-          "height": 736
-        },
-        {
-          "file": "archive-photo-110",
-          "stage": "after",
-          "label": "Finished view — additional view 6",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-117",
-          "stage": "after",
-          "label": "Finished view — additional view 7",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "project-131",
-          "stage": "after",
-          "label": "Finished view — additional view 8",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "project-132",
-          "stage": "after",
-          "label": "Finished view — additional view 9",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-122",
-          "stage": "after",
-          "label": "Finished view — additional view 10",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "fireplace-builtins",
-          "stage": "after",
-          "label": "Finished view — additional view 11",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-124",
-          "stage": "after",
-          "label": "Finished view — additional view 12",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "kitchen-cabinetry",
-          "stage": "after",
-          "label": "Finished view — additional view 13",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-126",
-          "stage": "after",
-          "label": "Finished view — additional view 14",
-          "width": 2048,
-          "height": 1186
-        },
-        {
-          "file": "archive-photo-127",
-          "stage": "after",
-          "label": "Finished view — additional view 15",
-          "width": 854,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-128",
-          "stage": "after",
-          "label": "Finished view — additional view 16",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-129",
-          "stage": "after",
-          "label": "Finished view — additional view 17",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-130",
-          "stage": "after",
-          "label": "Finished view — additional view 18",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-099",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 1",
-          "width": 2048,
-          "height": 2048
-        }
-      ]
-    },
-    {
-      "id": "fireplace-living",
-      "project": "Open-plan home",
-      "title": "Front living-room fireplace",
-      "evidence": "Same fireplace position, adjacent tall windows and veined surround. Photo 131 is this main-floor room, not a basement.",
-      "sequence": [
-        {
-          "file": "project-088",
-          "stage": "during",
-          "label": "During — unfinished fireplace wall",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-152",
-          "stage": "during",
-          "label": "During — stone surround installed",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "living-room",
-          "stage": "after",
-          "label": "After — finished fireplace and living room",
-          "width": 1125,
-          "height": 746
-        }
-      ],
-      "additional": [
-        {
-          "file": "archive-photo-082",
-          "stage": "after",
-          "label": "Finished view — additional view 1",
-          "width": 1080,
-          "height": 1080
-        },
-        {
-          "file": "archive-photo-089",
-          "stage": "after",
-          "label": "Finished view — additional view 2",
-          "width": 1080,
-          "height": 1080
-        },
-        {
-          "file": "basement-living",
-          "stage": "after",
-          "label": "Finished view — additional view 3",
-          "width": 2048,
-          "height": 1536
-        }
-      ]
-    },
-    {
-      "id": "hallway",
-      "project": "Open-plan home",
-      "title": "Upper hallway and landing",
-      "evidence": "Supplied comparisons 97 and 115 explicitly link the framed hallway with these finished views.",
-      "sequence": [
-        {
-          "file": "project-084",
-          "stage": "during",
-          "label": "During — hallway framing",
-          "width": 2048,
-          "height": 708
-        },
-        {
-          "file": "project-094",
-          "stage": "after",
-          "label": "After — finished doors and landing",
-          "width": 2048,
-          "height": 1536
-        }
-      ],
-      "additional": [
-        {
-          "file": "hallway-doors",
-          "stage": "after",
-          "label": "Finished view — additional view 1",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-097",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 1",
-          "width": 2048,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-115",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 2",
-          "width": 2048,
-          "height": 2048
-        }
-      ]
-    },
-    {
-      "id": "glass-shower",
-      "project": "Open-plan home",
-      "title": "Double shower",
-      "evidence": "Matching two sets of plumbing penetrations, shower niche, stone slab and adjacent double vanity.",
-      "sequence": [
-        {
-          "file": "shower-preparation",
-          "stage": "during",
-          "label": "During — shower waterproofing",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "project-126",
-          "stage": "during",
-          "label": "During — stone tile installed",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "project-137",
-          "stage": "after",
-          "label": "After — glass and shower fixtures installed",
-          "width": 1536,
-          "height": 2048
-        }
-      ],
-      "additional": [
-        {
-          "file": "archive-photo-153",
-          "stage": "during",
-          "label": "During renovation — additional view 1",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "bathroom-double-vanity",
-          "stage": "after",
-          "label": "Finished view — additional view 1",
-          "width": 1080,
-          "height": 1080
-        },
-        {
-          "file": "archive-photo-109",
-          "stage": "after",
-          "label": "Finished view — additional view 2",
-          "width": 1536,
-          "height": 2048
-        }
-      ]
-    },
-    {
-      "id": "front-exterior",
-      "project": "Open-plan home",
-      "title": "Front facade",
-      "evidence": "Same neighbouring houses and bay-window elevation; supplied facade comparisons provide matching evidence.",
-      "sequence": [
-        {
-          "file": "project-097",
-          "stage": "during",
-          "label": "During — original facade opened up",
-          "width": 768,
-          "height": 1024
-        },
-        {
-          "file": "archive-photo-142",
-          "stage": "during",
-          "label": "During — new facade under construction",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "exterior-front",
-          "stage": "after",
-          "label": "After — finished front elevation",
-          "width": 1536,
-          "height": 2048
-        }
-      ],
-      "additional": [
-        {
-          "file": "archive-photo-163",
-          "stage": "during",
-          "label": "During renovation — additional view 1",
-          "width": 768,
-          "height": 1024
-        },
-        {
-          "file": "archive-photo-165",
-          "stage": "during",
-          "label": "During renovation — additional view 2",
-          "width": 901,
-          "height": 1600
-        },
-        {
-          "file": "archive-photo-140",
-          "stage": "during",
-          "label": "During renovation — additional view 3",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-141",
-          "stage": "during",
-          "label": "During renovation — additional view 4",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-151",
-          "stage": "during",
-          "label": "During renovation — additional view 5",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "project-196",
-          "stage": "during",
-          "label": "During renovation — additional view 6",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-094",
-          "stage": "during",
-          "label": "During renovation — additional view 7",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-079",
-          "stage": "after",
-          "label": "Finished view — additional view 1",
-          "width": 1440,
-          "height": 1440
-        },
-        {
-          "file": "archive-photo-092",
-          "stage": "after",
-          "label": "Finished view — additional view 2",
-          "width": 1497,
-          "height": 2101
-        },
-        {
-          "file": "archive-photo-093",
-          "stage": "after",
-          "label": "Finished view — additional view 3",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-112",
-          "stage": "after",
-          "label": "Finished view — additional view 4",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-138",
-          "stage": "after",
-          "label": "Finished view — additional view 5",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-095",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 1",
-          "width": 2048,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-107",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 2",
-          "width": 2048,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-108",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 3",
-          "width": 2048,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-139",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 4",
-          "width": 2048,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-162",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 5",
-          "width": 2048,
-          "height": 2048
+          "label": "Finished open-plan main floor",
+          "width": 760,
+          "height": 570,
+          "source_id": 132
         }
       ]
     },
@@ -1077,470 +214,40 @@
       "id": "rear-addition",
       "project": "Open-plan home",
       "title": "Rear addition",
-      "evidence": "Supplied comparisons 103–105 link the demolished rear with the completed addition; adjoining houses and rear openings remain identifiable.",
+      "aliases": [],
+      "evidence": "Same pink gabled left neighbour and original rear stub/hip roof.215 X shoring;205 new foundation walls and floor framing;106 complete rear addition.",
       "sequence": [
+        {
+          "file": "archive-photo-220",
+          "stage": "before",
+          "label": "Original rear of the house",
+          "width": 450,
+          "height": 600,
+          "source_id": 220
+        },
         {
           "file": "project-134",
           "stage": "during",
-          "label": "During — original rear opened up",
-          "width": 1536,
-          "height": 2048
+          "label": "Rear demolition and temporary support",
+          "width": 540,
+          "height": 720,
+          "source_id": 215
         },
         {
           "file": "archive-photo-205",
           "stage": "during",
-          "label": "During — rear structure and framing",
-          "width": 1536,
-          "height": 2048
+          "label": "New foundation walls and floor framing",
+          "width": 450,
+          "height": 600,
+          "source_id": 205
         },
         {
           "file": "exterior-rear",
           "stage": "after",
-          "label": "After — completed rear addition",
-          "width": 1125,
-          "height": 744
-        }
-      ],
-      "additional": [
-        {
-          "file": "archive-photo-220",
-          "stage": "during",
-          "label": "During renovation — additional view 1",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-213",
-          "stage": "during",
-          "label": "During renovation — additional view 2",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-184",
-          "stage": "during",
-          "label": "During renovation — additional view 3",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-191",
-          "stage": "during",
-          "label": "During renovation — additional view 4",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-219",
-          "stage": "during",
-          "label": "During renovation — additional view 5",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-183",
-          "stage": "during",
-          "label": "During renovation — additional view 6",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-210",
-          "stage": "during",
-          "label": "During renovation — additional view 7",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-211",
-          "stage": "during",
-          "label": "During renovation — additional view 8",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-214",
-          "stage": "during",
-          "label": "During renovation — additional view 9",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-207",
-          "stage": "during",
-          "label": "During renovation — additional view 10",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-208",
-          "stage": "during",
-          "label": "During renovation — additional view 11",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-209",
-          "stage": "during",
-          "label": "During renovation — additional view 12",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-216",
-          "stage": "during",
-          "label": "During renovation — additional view 13",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-217",
-          "stage": "during",
-          "label": "During renovation — additional view 14",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-218",
-          "stage": "during",
-          "label": "During renovation — additional view 15",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-206",
-          "stage": "during",
-          "label": "During renovation — additional view 16",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-212",
-          "stage": "during",
-          "label": "During renovation — additional view 17",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-198",
-          "stage": "during",
-          "label": "During renovation — additional view 18",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-199",
-          "stage": "during",
-          "label": "During renovation — additional view 19",
-          "width": 1600,
-          "height": 1200
-        },
-        {
-          "file": "archive-photo-200",
-          "stage": "during",
-          "label": "During renovation — additional view 20",
-          "width": 960,
-          "height": 1280
-        },
-        {
-          "file": "archive-photo-204",
-          "stage": "during",
-          "label": "During renovation — additional view 21",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-084",
-          "stage": "after",
-          "label": "Finished view — additional view 1",
-          "width": 1080,
-          "height": 1080
-        },
-        {
-          "file": "archive-photo-103",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 1",
-          "width": 2048,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-104",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 2",
-          "width": 2048,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-105",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 3",
-          "width": 2048,
-          "height": 2048
-        }
-      ]
-    },
-    {
-      "id": "commercial-panelling",
-      "project": "Commercial space",
-      "title": "Interior timber wall",
-      "evidence": "Same long wall, rectangular service opening, doorway and ceiling ductwork.",
-      "sequence": [
-        {
-          "file": "archive-photo-244",
-          "stage": "during",
-          "label": "During — wall opened for repairs",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-240",
-          "stage": "during",
-          "label": "During — replacement wall boarding",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-236",
-          "stage": "after",
-          "label": "After — timber wall panelling",
-          "width": 2048,
-          "height": 1536
-        }
-      ],
-      "additional": [
-        {
-          "file": "archive-photo-251",
-          "stage": "during",
-          "label": "During renovation — additional view 1",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-250",
-          "stage": "during",
-          "label": "During renovation — additional view 2",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-249",
-          "stage": "during",
-          "label": "During renovation — additional view 3",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-248",
-          "stage": "during",
-          "label": "During renovation — additional view 4",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-247",
-          "stage": "during",
-          "label": "During renovation — additional view 5",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-246",
-          "stage": "during",
-          "label": "During renovation — additional view 6",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-245",
-          "stage": "during",
-          "label": "During renovation — additional view 7",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-243",
-          "stage": "during",
-          "label": "During renovation — additional view 8",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-242",
-          "stage": "during",
-          "label": "During renovation — additional view 9",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-241",
-          "stage": "during",
-          "label": "During renovation — additional view 10",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-239",
-          "stage": "during",
-          "label": "During renovation — additional view 11",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-230",
-          "stage": "after",
-          "label": "Finished view — additional view 1",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-231",
-          "stage": "after",
-          "label": "Finished view — additional view 2",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-232",
-          "stage": "after",
-          "label": "Finished view — additional view 3",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-233",
-          "stage": "after",
-          "label": "Finished view — additional view 4",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-234",
-          "stage": "after",
-          "label": "Finished view — additional view 5",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-235",
-          "stage": "after",
-          "label": "Finished view — additional view 6",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-237",
-          "stage": "after",
-          "label": "Finished view — additional view 7",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-238",
-          "stage": "after",
-          "label": "Finished view — additional view 8",
-          "width": 2048,
-          "height": 1536
-        }
-      ]
-    },
-    {
-      "id": "exterior",
-      "project": "Stone-front home",
-      "title": "Stone exterior",
-      "evidence": "Supplied comparison 264 and the identical roofline, garage and projecting bay window.",
-      "sequence": [
-        {
-          "file": "exterior-before",
-          "stage": "before",
-          "label": "Before — original brick exterior",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-270",
-          "stage": "during",
-          "label": "During — exterior stonework",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "stone-exterior",
-          "stage": "after",
-          "label": "After — stone-clad facade",
-          "width": 2048,
-          "height": 1536
-        }
-      ],
-      "additional": [
-        {
-          "file": "archive-photo-255",
-          "stage": "during",
-          "label": "During renovation — additional view 1",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-256",
-          "stage": "during",
-          "label": "During renovation — additional view 2",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-252",
-          "stage": "after",
-          "label": "Finished view — additional view 1",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "project-244",
-          "stage": "after",
-          "label": "Finished view — additional view 2",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-254",
-          "stage": "after",
-          "label": "Finished view — additional view 3",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-265",
-          "stage": "after",
-          "label": "Finished view — additional view 4",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-266",
-          "stage": "after",
-          "label": "Finished view — additional view 5",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "stonework-detail",
-          "stage": "after",
-          "label": "Finished view — additional view 6",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-269",
-          "stage": "after",
-          "label": "Finished view — additional view 7",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-264",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 1",
-          "width": 2048,
-          "height": 2048
+          "label": "Finished rear addition and garden",
+          "width": 760,
+          "height": 503,
+          "source_id": 106
         }
       ]
     },
@@ -1548,433 +255,114 @@
       "id": "curved-stair",
       "project": "Curved-stair home",
       "title": "Curved staircase",
-      "evidence": "Supplied stair comparison 327, same curved stair run and doorway alongside it.",
+      "aliases": [],
+      "evidence": "Intact staged original364, same curved staircase/door during345, complete316; collage327 anchors original/final.",
       "sequence": [
         {
-          "file": "archive-photo-350",
+          "file": "archive-photo-364",
           "stage": "before",
-          "label": "Before — original wood staircase",
-          "width": 1536,
-          "height": 2048
+          "label": "Original curved staircase",
+          "width": 600,
+          "height": 400,
+          "source_id": 364
         },
         {
           "file": "archive-photo-345",
           "stage": "during",
-          "label": "During — staircase and surrounding framing",
-          "width": 2048,
-          "height": 1536
+          "label": "Main floor opened up around the staircase",
+          "width": 600,
+          "height": 450,
+          "source_id": 345
         },
         {
           "file": "archive-photo-316",
           "stage": "after",
-          "label": "After — finished curved staircase",
-          "width": 2048,
-          "height": 1366
-        }
-      ],
-      "additional": [
-        {
-          "file": "archive-photo-337",
-          "stage": "during",
-          "label": "During renovation — additional view 1",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-331",
-          "stage": "after",
-          "label": "Finished view — additional view 1",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-336",
-          "stage": "after",
-          "label": "Finished view — additional view 2",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-338",
-          "stage": "after",
-          "label": "Finished view — additional view 3",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-327",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 1",
-          "width": 2048,
-          "height": 2048
+          "label": "Finished staircase and tiled entrance",
+          "width": 600,
+          "height": 400,
+          "source_id": 316
         }
       ]
     },
     {
-      "id": "entrance",
+      "id": "curved-bathroom",
       "project": "Curved-stair home",
-      "title": "Front entrance",
-      "evidence": "Same entrance opening with sidelights and transom; finished outside view shows the new door.",
+      "title": "Bathroom renovation",
+      "aliases": [],
+      "evidence": "Same rear toilet/window and right shower doorway. Original corner tub removed in348 then finished bathroom314.",
       "sequence": [
         {
-          "file": "archive-photo-362",
+          "file": "archive-photo-365",
           "stage": "before",
-          "label": "Before — original entrance",
-          "width": 1500,
-          "height": 1000
+          "label": "Original bathroom and corner tub",
+          "width": 600,
+          "height": 400,
+          "source_id": 365
         },
         {
-          "file": "archive-photo-320",
-          "stage": "after",
-          "label": "After — new front door and flooring",
-          "width": 2048,
-          "height": 1366
-        }
-      ],
-      "additional": [
-        {
-          "file": "archive-photo-326",
-          "stage": "after",
-          "label": "Finished view — additional view 1",
-          "width": 2048,
-          "height": 1366
-        }
-      ]
-    },
-    {
-      "id": "flooring",
-      "project": "Flooring repairs",
-      "title": "Living-area flooring",
-      "evidence": "Same patio opening, fireplace and floor area. After describes the floor installation, not completion of all room repairs.",
-      "sequence": [
-        {
-          "file": "archive-photo-368",
+          "file": "archive-photo-348",
           "stage": "during",
-          "label": "During — subfloor prepared",
-          "width": 1536,
-          "height": 2048
+          "label": "Old tub and finishes removed",
+          "width": 600,
+          "height": 450,
+          "source_id": 348
         },
         {
-          "file": "archive-photo-366",
+          "file": "archive-photo-314",
           "stage": "after",
-          "label": "After — new flooring installed",
-          "width": 2048,
-          "height": 1536
-        }
-      ],
-      "additional": [
-        {
-          "file": "archive-photo-372",
-          "stage": "during",
-          "label": "During renovation — additional view 1",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-373",
-          "stage": "during",
-          "label": "During renovation — additional view 2",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-371",
-          "stage": "during",
-          "label": "During — existing flooring removed",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-367",
-          "stage": "after",
-          "label": "Finished view — additional view 1",
-          "width": 1536,
-          "height": 2048
+          "label": "Finished bathroom with tub and glass shower",
+          "width": 600,
+          "height": 400,
+          "source_id": 314
         }
       ]
-    },
-    {
-      "id": "small-room-floor",
-      "project": "Flooring repairs",
-      "title": "Small-room floor",
-      "evidence": "Matching rear window, wall vent and narrow doorway; same camera direction.",
-      "sequence": [
-        {
-          "file": "archive-photo-370",
-          "stage": "during",
-          "label": "During — floor stripped",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-369",
-          "stage": "after",
-          "label": "After — floor surface installed",
-          "width": 1536,
-          "height": 2048
-        }
-      ],
-      "additional": []
     },
     {
       "id": "salon-main",
       "project": "Salon renovation",
-      "title": "Main salon floor",
-      "evidence": "Same commercial shell, front windows and long floor; separate washroom, treatment room and kitchenette are kept in their own sequences.",
+      "title": "Main salon",
+      "aliases": [],
+      "evidence": "Same blue/orange original shell and exposed ducts.427 framing/floor removal;411 partitions/stone wall work;404 installation of exact nail wall cabinets and backsplash seen complete389.",
       "sequence": [
         {
           "file": "archive-photo-380",
           "stage": "before",
-          "label": "Before — original commercial interior",
-          "width": 945,
-          "height": 2048
+          "label": "Original shop interior",
+          "width": 277,
+          "height": 600,
+          "source_id": 380
         },
         {
           "file": "archive-photo-427",
           "stage": "during",
-          "label": "During — demolition and partition framing",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-389",
-          "stage": "after",
-          "label": "After — finished salon floor",
-          "width": 1536,
-          "height": 2048
-        }
-      ],
-      "additional": [
-        {
-          "file": "archive-photo-379",
-          "stage": "before",
-          "label": "Before — additional view 1",
-          "width": 945,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-381",
-          "stage": "before",
-          "label": "Before — additional view 2",
-          "width": 945,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-382",
-          "stage": "before",
-          "label": "Before — additional view 3",
-          "width": 945,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-383",
-          "stage": "before",
-          "label": "Before — additional view 4",
-          "width": 945,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-385",
-          "stage": "before",
-          "label": "Before — additional view 5",
-          "width": 945,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-388",
-          "stage": "before",
-          "label": "Before — additional view 6",
-          "width": 945,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-432",
-          "stage": "during",
-          "label": "During renovation — additional view 1",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-431",
-          "stage": "during",
-          "label": "During renovation — additional view 2",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-430",
-          "stage": "during",
-          "label": "During renovation — additional view 3",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-429",
-          "stage": "during",
-          "label": "During renovation — additional view 4",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-428",
-          "stage": "during",
-          "label": "During renovation — additional view 5",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-426",
-          "stage": "during",
-          "label": "During renovation — additional view 6",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-425",
-          "stage": "during",
-          "label": "During renovation — additional view 7",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-424",
-          "stage": "during",
-          "label": "During renovation — additional view 8",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-421",
-          "stage": "during",
-          "label": "During renovation — additional view 9",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-420",
-          "stage": "during",
-          "label": "During renovation — additional view 10",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-419",
-          "stage": "during",
-          "label": "During renovation — additional view 11",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-418",
-          "stage": "during",
-          "label": "During renovation — additional view 12",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-416",
-          "stage": "during",
-          "label": "During renovation — additional view 13",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-415",
-          "stage": "during",
-          "label": "During renovation — additional view 14",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-412",
-          "stage": "during",
-          "label": "During renovation — additional view 17",
-          "width": 1536,
-          "height": 2048
+          "label": "Floor removal and new partition framing",
+          "width": 450,
+          "height": 600,
+          "source_id": 427
         },
         {
           "file": "archive-photo-411",
           "stage": "during",
-          "label": "During renovation — additional view 18",
-          "width": 1536,
-          "height": 2048
+          "label": "Walls and finishes taking shape",
+          "width": 450,
+          "height": 600,
+          "source_id": 411
         },
         {
-          "file": "archive-photo-410",
+          "file": "archive-photo-404",
           "stage": "during",
-          "label": "During renovation — additional view 19",
-          "width": 1536,
-          "height": 2048
+          "label": "Manicure wall and cabinets being installed",
+          "width": 600,
+          "height": 450,
+          "source_id": 404
         },
         {
-          "file": "archive-photo-403",
-          "stage": "during",
-          "label": "During renovation — additional view 23",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-402",
-          "stage": "during",
-          "label": "During renovation — additional view 24",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-390",
+          "file": "archive-photo-389",
           "stage": "after",
-          "label": "Finished view — additional view 1",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-391",
-          "stage": "after",
-          "label": "Finished view — additional view 2",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-392",
-          "stage": "after",
-          "label": "Finished view — additional view 3",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-393",
-          "stage": "after",
-          "label": "Finished view — additional view 4",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-394",
-          "stage": "after",
-          "label": "Finished view — additional view 5",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-397",
-          "stage": "after",
-          "label": "Finished view — additional view 6",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-398",
-          "stage": "after",
-          "label": "Finished view — additional view 7",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-399",
-          "stage": "after",
-          "label": "Finished view — additional view 8",
-          "width": 1536,
-          "height": 2048
+          "label": "Finished salon and manicure stations",
+          "width": 450,
+          "height": 600,
+          "source_id": 389
         }
       ]
     },
@@ -1982,44 +370,32 @@
       "id": "salon-treatment",
       "project": "Salon renovation",
       "title": "Treatment room",
-      "evidence": "Supplied comparison 376 contains these exact before/during/after views.",
+      "aliases": [],
+      "evidence": "Supplied collage376 exact three views. Label384 as existing treatment space rather than an original finished room.",
       "sequence": [
         {
           "file": "archive-photo-384",
           "stage": "before",
-          "label": "Before — original narrow room",
-          "width": 945,
-          "height": 2048
+          "label": "Existing treatment space",
+          "width": 277,
+          "height": 600,
+          "source_id": 384
         },
         {
           "file": "archive-photo-406",
           "stage": "during",
-          "label": "During — walls prepared for finishes",
-          "width": 1536,
-          "height": 2048
+          "label": "Treatment room during renovation",
+          "width": 450,
+          "height": 600,
+          "source_id": 406
         },
         {
           "file": "archive-photo-396",
           "stage": "after",
-          "label": "After — finished treatment room",
-          "width": 2048,
-          "height": 1536
-        }
-      ],
-      "additional": [
-        {
-          "file": "archive-photo-386",
-          "stage": "before",
-          "label": "Before — additional view 1",
-          "width": 945,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-376",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 1",
-          "width": 2048,
-          "height": 2048
+          "label": "Finished treatment room",
+          "width": 600,
+          "height": 450,
+          "source_id": 396
         }
       ]
     },
@@ -2027,1233 +403,32 @@
       "id": "salon-washroom",
       "project": "Salon renovation",
       "title": "Washroom",
-      "evidence": "Supplied comparison 375 contains these exact views; same toilet position and ceiling opening.",
+      "aliases": [],
+      "evidence": "Supplied collage375 exact three views; same toilet, ceiling vent and vanity.",
       "sequence": [
         {
           "file": "archive-photo-378",
           "stage": "before",
-          "label": "Before — original washroom",
-          "width": 945,
-          "height": 2048
+          "label": "Original washroom",
+          "width": 277,
+          "height": 600,
+          "source_id": 378
         },
         {
           "file": "archive-photo-408",
           "stage": "during",
-          "label": "During — washroom renovation",
-          "width": 1536,
-          "height": 2048
+          "label": "Washroom during renovation",
+          "width": 450,
+          "height": 600,
+          "source_id": 408
         },
         {
           "file": "archive-photo-374",
           "stage": "after",
-          "label": "After — finished washroom",
-          "width": 945,
-          "height": 2048
-        }
-      ],
-      "additional": [
-        {
-          "file": "archive-photo-423",
-          "stage": "during",
-          "label": "During renovation — additional view 1",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-422",
-          "stage": "during",
-          "label": "During renovation — additional view 2",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-375",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 1",
-          "width": 2048,
-          "height": 2048
-        }
-      ]
-    },
-    {
-      "id": "salon-kitchenette",
-      "project": "Salon renovation",
-      "title": "Staff kitchenette",
-      "evidence": "Supplied comparison 377 links the original blue counter corner and the completed white kitchenette.",
-      "sequence": [
-        {
-          "file": "archive-photo-387",
-          "stage": "before",
-          "label": "Before — original counter corner",
-          "width": 945,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-400",
-          "stage": "after",
-          "label": "After — new sink and cabinetry",
-          "width": 1536,
-          "height": 2048
-        }
-      ],
-      "additional": [
-        {
-          "file": "archive-photo-377",
-          "stage": "comparison",
-          "label": "Supplied comparison — additional view 1",
-          "width": 2048,
-          "height": 2048
-        }
-      ]
-    }
-  ],
-  "references": [
-    {
-      "id": "townhouse-references",
-      "title": "Townhouse renovation",
-      "photos": [
-        {
-          "file": "archive-photo-062",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-078",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 274,
-          "height": 182
-        },
-        {
-          "file": "archive-photo-059",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-064",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-065",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-066",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-054",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-056",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "framing-in-progress",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-060",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-050",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-049",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-058",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-014",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-018",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-019",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-020",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "basement-hall",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-022",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-027",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-043",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-002",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-009",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 2048
-        }
-      ]
-    },
-    {
-      "id": "open-plan-home-references",
-      "title": "Open-plan home and addition",
-      "photos": [
-        {
-          "file": "archive-photo-221",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-203",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-202",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-201",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "basement-preparation",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-196",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-192",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-190",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "addition-framing",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-188",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-187",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1280,
-          "height": 960
-        },
-        {
-          "file": "archive-photo-186",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-185",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-182",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-180",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "basement-before",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-178",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "bathroom-framing",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-175",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1200,
-          "height": 1600
-        },
-        {
-          "file": "archive-photo-174",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1200,
-          "height": 1600
-        },
-        {
-          "file": "archive-photo-173",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 900,
-          "height": 1600
-        },
-        {
-          "file": "archive-photo-169",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1600,
-          "height": 900
-        },
-        {
-          "file": "archive-photo-168",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1600,
-          "height": 900
-        },
-        {
-          "file": "archive-photo-167",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 900,
-          "height": 1600
-        },
-        {
-          "file": "archive-photo-161",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-157",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "trim-detail",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-121",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "bathroom-glass",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-136",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1638,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-098",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 2048
-        }
-      ]
-    },
-    {
-      "id": "commercial-panelling-references",
-      "title": "Commercial wall panelling",
-      "photos": [
-        {
-          "file": "archive-photo-224",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-225",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-226",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-227",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-228",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-229",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        }
-      ]
-    },
-    {
-      "id": "stone-home-references",
-      "title": "Stone-front home renovation",
-      "photos": [
-        {
-          "file": "archive-photo-311",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-310",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-309",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-308",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-307",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-306",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-305",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "paint-trim",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-303",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-301",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-300",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-299",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-298",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-297",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-296",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-295",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 900,
-          "height": 1600
-        },
-        {
-          "file": "archive-photo-294",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 900,
-          "height": 1600
-        },
-        {
-          "file": "archive-photo-293",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 900,
-          "height": 1600
-        },
-        {
-          "file": "archive-photo-292",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-291",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-290",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-289",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-288",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-287",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-286",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-285",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-284",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-283",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-282",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-281",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-280",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-279",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-278",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-277",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-276",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-275",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-274",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-273",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-272",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-271",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-263",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-262",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-261",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-260",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-259",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-258",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-257",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        }
-      ]
-    },
-    {
-      "id": "curved-stair-home-references",
-      "title": "Curved-stair home renovation",
-      "photos": [
-        {
-          "file": "archive-photo-363",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1500,
-          "height": 1000
-        },
-        {
-          "file": "archive-photo-361",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1500,
-          "height": 1000
-        },
-        {
-          "file": "archive-photo-364",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1500,
-          "height": 1000
-        },
-        {
-          "file": "archive-photo-365",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1500,
-          "height": 1000
-        },
-        {
-          "file": "archive-photo-356",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-357",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-358",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-359",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-360",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-355",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-354",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-352",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-351",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-349",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-348",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-347",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-346",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-344",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-343",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-342",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-341",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-340",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-339",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-312",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 900,
-          "height": 600
-        },
-        {
-          "file": "archive-photo-313",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1366
-        },
-        {
-          "file": "archive-photo-314",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1366
-        },
-        {
-          "file": "archive-photo-315",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1366
-        },
-        {
-          "file": "archive-photo-317",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1366
-        },
-        {
-          "file": "archive-photo-318",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1366
-        },
-        {
-          "file": "archive-photo-319",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1366
-        },
-        {
-          "file": "archive-photo-321",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1366
-        },
-        {
-          "file": "archive-photo-322",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1366
-        },
-        {
-          "file": "archive-photo-323",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1366
-        },
-        {
-          "file": "archive-photo-324",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1366
-        },
-        {
-          "file": "archive-photo-325",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1366
-        },
-        {
-          "file": "archive-photo-334",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-335",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-332",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-333",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-353",
-          "stage": "reference",
-          "label": "Upper landing — individual view",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-328",
-          "stage": "reference",
-          "label": "Upper landing — individual view",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-329",
-          "stage": "reference",
-          "label": "Upper landing — individual view",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-330",
-          "stage": "reference",
-          "label": "Upper landing — individual view",
-          "width": 2048,
-          "height": 1536
-        }
-      ]
-    },
-    {
-      "id": "salon-references",
-      "title": "Salon renovation",
-      "photos": [
-        {
-          "file": "archive-photo-417",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-404",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-395",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-401",
-          "stage": "reference",
-          "label": "Additional project photo",
-          "width": 2048,
-          "height": 1536
-        },
-        {
-          "file": "archive-photo-414",
-          "stage": "reference",
-          "label": "Salon construction — individual view",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-413",
-          "stage": "reference",
-          "label": "Salon construction — individual view",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-409",
-          "stage": "reference",
-          "label": "Salon construction — individual view",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-407",
-          "stage": "reference",
-          "label": "Salon construction — individual view",
-          "width": 1536,
-          "height": 2048
-        },
-        {
-          "file": "archive-photo-405",
-          "stage": "reference",
-          "label": "Salon construction — individual view",
-          "width": 1536,
-          "height": 2048
+          "label": "Finished washroom",
+          "width": 277,
+          "height": 600,
+          "source_id": 374
         }
       ]
     }
